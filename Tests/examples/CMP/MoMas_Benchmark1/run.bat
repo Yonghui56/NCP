@@ -1,0 +1,1 @@
+ogs6.exe -i MoMas_Benchmark1_BGT > result.txt

@@ -1,0 +1,26 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  C1
+  C2
+  C3
+  C4
+  C5
+  X1
+  X2
+  X3
+  X4
+  S
+  CS1
+  CS2
+ $ELE_VALUES
+  VELOCITY
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  PVD
+ $TIM_TYPE
+  STEPS 1
+#STOP
+

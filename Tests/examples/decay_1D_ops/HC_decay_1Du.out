@@ -1,0 +1,26 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // domain nodes
+ $NOD_VALUES
+  HEAD
+  Tracer
+  Decay_Father
+  Decay_Daughter
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  PVD
+ $TIM_TYPE
+  STEPS 10
+#STOP
+
+
+
+ $TIM_TYPE
+  0
+  86400
+  2160000
+  4320000
+  6480000
+  8640000
+
+

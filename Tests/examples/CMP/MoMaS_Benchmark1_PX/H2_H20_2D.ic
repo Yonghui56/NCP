@@ -1,0 +1,23 @@
+GeoSys-IC  Initial Conditions ------------------------------------------------
+#INITIAL_CONDITION
+ $PCS_TYPE
+  CMP_TotalDensityForm
+ $PRIMARY_VARIABLE 
+  MEAN_PRESSURE
+ $GEO_TYPE
+  DOMAIN
+ $DIS_TYPE
+  CONSTANT 1E+6
+
+#INITIAL_CONDITION
+ $PCS_TYPE
+  CMP_TotalDensityForm
+ $PRIMARY_VARIABLE 
+  TOTAL_MASS_DENSITY
+ $GEO_TYPE
+  DOMAIN
+ $DIS_TYPE
+  CONSTANT 1e-6
+#STOP
+
+

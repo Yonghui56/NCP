@@ -1,0 +1,1 @@
+ogs6.exe -i seqdeg > result.txt

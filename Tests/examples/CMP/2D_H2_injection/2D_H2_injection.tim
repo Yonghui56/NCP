@@ -1,0 +1,16 @@
+GeoSys-TIM: Timestepping ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  CMP_PressureForm
+ $TIME_STEPS
+	2000 10
+ $TIME_END
+  20000
+ $TIME_START
+  0.0
+#STOP
+
+
+
+
+

@@ -1,0 +1,1 @@
+ogs6.exe -i H2_H20_2D > result.txt

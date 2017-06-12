@@ -1,0 +1,26 @@
+GeoSys Kinetic Reactions
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	1                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-6		 ; rel. Error
+ $MIN_TIMESTEP	
+	1.e-6		; min Timestep
+ $INITIAL_TIMESTEP	
+	1.e-4       ; init Timestep
+ $BACTERIACAPACITY
+  100.0
+ $NO_REACTIONS
+   POLYLINE PLY_BC_LEFT
+
+#REACTION ; 
+ $NAME
+   first_order_decay ;
+ $TYPE
+   USER_EXP;
+ $EQUATION
+  1 Decay_Father = 1 Decay_Daughter ; 
+ $USER_EXPRESSION
+  2.0E-7 * mDecay_Father
+ 
+#STOP

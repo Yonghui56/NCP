@@ -1,0 +1,121 @@
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  NO3n ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  -1.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME
+  SO4nn ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  -2.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+
+#COMPONENT_PROPERTIES  ; comp3
+ $NAME
+  O2 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+   0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+
+#COMPONENT_PROPERTIES  ; comp4
+ $NAME
+  CH2O ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+   0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp5
+ $NAME
+  CO2 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp6
+ $NAME
+  H2O ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp7
+ $NAME
+  N2 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp8
+ $NAME
+  HCO3n ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp9
+ $NAME
+  H2CO3 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp10
+ $NAME
+  H2S ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#STOP

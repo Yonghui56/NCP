@@ -1,0 +1,23 @@
+GeoSys-BC: Boundary Conditions ------------------------------------------------
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  CMP_PressureForm
+ $PRIMARY_VARIABLE 
+  LIQUID_PRESSURE
+ $GEO_TYPE
+  POLYLINE PLY_OUT
+ $DIS_TYPE
+  CONSTANT 1.0E+6
+
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  CMP_PressureForm
+ $PRIMARY_VARIABLE 
+  MOLAR_FRACTION
+ $GEO_TYPE
+  POLYLINE PLY_OUT
+ $DIS_TYPE
+  CONSTANT 1e-5
+
+#STOP
+

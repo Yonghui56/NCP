@@ -1,0 +1,387 @@
+
+          ###################################################
+          ##                                               ##
+          ##              OpenGeoSys-Project 6             ##
+          ##                powered by LIS                 ##
+          ##                                               ##
+          ##   Contributors                                ##
+          ##   * Helmholtz Centre for Environmental        ##
+          ##     Research - UFZ                            ##
+          ##   * TU Dresden                                ##
+          ##   * University of Kiel                        ##
+          ##   * University of Edinburgh                   ##
+          ##   * University of Tuebingen (ZAG)             ##
+          ##   * Federal Institute for Geosciences         ##
+          ##     and Natural Resources (BGR)               ##
+          ##   * Helmholtz Centre Potsdam GFZ              ##
+          ##     German Research Centre for Geosciences    ##
+          ##                                               ##
+          ##   Program version                             ##
+          ##   * Version: 0.1.0(NW)                        ##
+          ##   * Date   : 05.07.2012                       ##
+          ##   * Rev.   :                                  ##
+          ##     1e11b8500c60cef86fa20c7bafab4b31ec063c5e  ##
+          ##                                               ##
+          ###################################################
+
+
+->Parsing input arguments
+* project path     : strack
+* log file path    : ogs.log
+* output directory : ogs6
+->Reading a property file...
+->Reading OGS5 input files...
+->Constructing meshes... 1 mesh loaded
+->mesh id 0: dim=2, nodes=11568, elements=22758
+->Generating coupling system...
+->Initializing all processes...
+PCS 0: LIQUID_FLOW (IN=0, OUT=1)
+* OUT 0: PRESSURE1
+->setting up a solution algorithm SingleStepFEM
+* Variable 0: name=pressure, order=1, n_dof=11568
+* Total number of DoFs = 11568
+PCS 1: PRESSURE_TO_ELEMENT_VELOCITY (IN=1, OUT=1)
+* IN  0: PRESSURE1
+* OUT 0: VELOCITY
+* Process option not found.
+PCS 2: HEAT_TRANSPORT (IN=1, OUT=1)
+* IN  0: VELOCITY
+* OUT 0: TEMPERATURE1
+->setting up a solution algorithm SingleStepFEM
+* Variable 0: name=concentration, order=1, n_dof=11568
+* Total number of DoFs = 11568
+***WARN: IC not found.
+->Setting time stepping...
+->Outputting the initial values...
+Writing results...: ogs6/strack_0.vtu
+->Simulation is ready! start=0.000000, end=20000.000000
+
+#############################################################
+Time step 1: t=2000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=2.770e+09
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 2.770e+09 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.097e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.097e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_1.vtu
+
+#############################################################
+Time step 2: t=4000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=8.622e-06
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 0/1
+residuals : 8.622e-06 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.424e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.424e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_2.vtu
+
+#############################################################
+Time step 3: t=6000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=1.163e-05
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 0/1
+residuals : 1.163e-05 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.442e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.442e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_3.vtu
+
+#############################################################
+Time step 4: t=8000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=1.270e-05
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 0/1
+residuals : 1.270e-05 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.452e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.452e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_4.vtu
+
+#############################################################
+Time step 5: t=10000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=1.252e-05
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 0/1
+residuals : 1.252e-05 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.461e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.461e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_5.vtu
+
+#############################################################
+Time step 6: t=12000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=7.678e-06
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 0/1
+residuals : 7.678e-06 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.467e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.467e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_6.vtu
+
+#############################################################
+Time step 7: t=14000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=9.126e-06
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 0/1
+residuals : 9.126e-06 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.465e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.465e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_7.vtu
+
+#############################################################
+Time step 8: t=16000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=1.237e-05
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 0/1
+residuals : 1.237e-05 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.457e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.457e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_8.vtu
+
+#############################################################
+Time step 9: t=18000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=7.992e-06
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 0/1
+residuals : 7.992e-06 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.445e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.445e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_9.vtu
+
+#############################################################
+Time step 10: t=20000.000000 s, dt=2000.000000 s 
+#############################################################
+Solving a partitioned system with 3 active sub problems...
+Solving LIQUID_FLOW...
+Picard iteration started!
+-> Picard #1: error=4.883e-06
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 0/1
+residuals : 4.883e-06 (tolerance=1.000e-03)
+------------------------------------------------------------------
+Calculating Darcy velocity within elements from fluid pressure...
+Solving HEAT_TRANSPORT...
+Picard iteration started!
+-> Picard #1: error=3.430e+02
+------------------------------------------------------------------
+*** PICARD nonlinear solver result
+status    : iteration not required
+iteration : 1/1
+residuals : 3.430e+02 (tolerance=1.000e-03)
+------------------------------------------------------------------
+------------------------------------------------------------------
+*** Partitioned coupling solver computation result
+nr. of subproblems : 3
+status             : iteration not required
+iteration          : 1/1
+residuals          : 0.000e+00 (tolerance=1.000e-04)
+------------------------------------------------------------------
+Writing results...: ogs6/strack_10.vtu
+
+->Simulation is finished.
+
+#############################################################
+*** Summary of this simulation
+total time step : 10
+elapsed time   : 36.887 sec
+#############################################################
+
+exit ogs6.

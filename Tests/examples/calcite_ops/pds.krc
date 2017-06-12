@@ -1,0 +1,89 @@
+GeoSys Reactions
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	1                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-6		 ; rel. Error
+ $MIN_TIMESTEP	
+	1.e-6		; min Timestep
+ $INITIAL_TIMESTEP	
+	1.e-4       ; init Timestep
+ $BACTERIACAPACITY
+  100.0
+ $NO_REACTIONS
+   POLYLINE PLY_BC_LEFT
+ $ACTIVITY_MODEL
+    2 ; constant activity coefficient = 0, DH = 1, Davies = 2
+
+#REACTION ; 
+ $NAME
+   R1 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 H+ + 1 CO32- = 1 HCO3- ; 
+ $EQ_CONSTANT
+ 2.132615e+10           ; K values
+ 
+#REACTION ; 
+ $NAME
+   R2 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 Ca2+ + 1 CO32- = 1 CaCO3 ; 
+ $EQ_CONSTANT
+ 1675.377           ; K values
+ 
+#REACTION ; 
+ $NAME
+   R3 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 Ca2+ + 1 H+ + 1 CO32- = 1 CaHCO3+ ; 
+ $EQ_CONSTANT
+ 2.7202e+11           ; K values
+ 
+#REACTION ; 
+ $NAME
+   R4 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 Mg2+ + 1 CO32- = 1 MgCO3 ; 
+ $EQ_CONSTANT
+ 954.333          ; K values
+ 
+#REACTION ; 
+ $NAME
+   R5 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 Mg2+ + 1 H+ + 1 CO32- = 1 MgHCO3+ ; 
+ $EQ_CONSTANT
+ 2.4952e+11           ; K values
+
+#REACTION ; 
+ $NAME
+   R2 ;
+ $TYPE
+   MIN_EQ_REACT;
+ $EQUATION
+   1 CO32- + 1 Ca2+ = 1 Calcite;
+ $EQ_CONSTANT
+ 3.019256431e+8           ; K values
+
+#REACTION ; 
+ $NAME
+   R3 ;
+ $TYPE
+   MIN_EQ_REACT;
+ $EQUATION
+   2 CO32- + 1 Ca2+ + 1 Mg2+ = 1 Dolomite(dis); 
+ $EQ_CONSTANT
+   3.46577209e+16          ; K values
+   
+#STOP
+

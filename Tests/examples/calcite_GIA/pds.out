@@ -1,0 +1,20 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  H+
+  Ca2+
+  Mg2+
+  CO32-
+  Cl-
+  HCO3-
+  Calcite
+  Dolomite(dis)
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  PVD
+ $TIM_TYPE
+  STEPS 10
+#STOP
+

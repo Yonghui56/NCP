@@ -1,0 +1,23 @@
+GeoSys-BC: Boundary Conditions ------------------------------------------------
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  CMP_TotalDensityForm
+ $PRIMARY_VARIABLE 
+  MEAN_PRESSURE
+ $GEO_TYPE
+  POLYLINE PLY_RIGHT
+ $DIS_TYPE
+  CONSTANT 1E+6
+
+#BOUNDARY_CONDITION
+ $PCS_TYPE
+  CMP_TotalDensityForm
+ $PRIMARY_VARIABLE 
+  TOTAL_MASS_DENSITY
+ $GEO_TYPE
+  POLYLINE PLY_RIGHT
+ $DIS_TYPE
+  CONSTANT 1e-6
+
+#STOP
+

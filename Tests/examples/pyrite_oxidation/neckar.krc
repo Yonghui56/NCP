@@ -1,0 +1,296 @@
+GeoSys Kinetic Reactions
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	1                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-6		 ; rel. Error
+ $MIN_TIMESTEP	
+	1.e-6		; min Timestep
+ $INITIAL_TIMESTEP	
+	1.e-4       ; init Timestep
+ $BACTERIACAPACITY
+  100.0
+ $NO_REACTIONS
+   POLYLINE PLY_BC_LEFT
+
+
+
+#REACTION ; 
+ $NAME
+   oxidation_oxygen ;
+ $TYPE
+   USER_EXP;
+ $EQUATION
+  1 CH2O + 1 O2 =  1 H2CO3  ; 
+ $USER_EXPRESSION
+  1.0 * 1.57E-9 * mCH2O * mO2 / ( 2.94E-4 + mO2 )
+
+#REACTION ; 
+ $NAME
+   oxidation_nitrate ;
+ $TYPE
+   USER_EXP;
+ $EQUATION
+  5 CH2O + 4 NO3n =  2 N2 + 4 HCO3n + 1 H2CO3 + 2 H2O ; 
+ $USER_EXPRESSION
+  1.0 * 1.57E-9 * mCH2O * 0.01 * mNO3n / ( 1.55E-4 + mNO3n ) / 5.0 
+
+#REACTION ; 
+ $NAME
+   oxidation_sulfate ;
+ $TYPE
+   USER_EXP;
+ $EQUATION
+  2 CH2O + 1 SO4nn =  2 HCO3n + 1 H2S ; 
+ $USER_EXPRESSION
+  1.0 * 1.57E-9 * mCH2O * 6.4E-5 * mSO4nn / ( 1.0E-4 + mSO4nn ) / 2.0  
+
+#REACTION ; 
+ $NAME
+   EQ_R_1 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   2.0 H2O + -4.0 Hp + -4.0 en = 1.0 O2  ; 
+ $EQ_CONSTANT_LOG10
+   -86.08       ; LOGK values
+   
+#REACTION ; 
+ $NAME
+   EQ_R_2 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   2.0 Hp + 2.0 en = 1.0 H2   ; 
+ $EQ_CONSTANT_LOG10
+   -3.15       ; LOGK values
+   
+#REACTION ; 
+ $NAME
+   EQ_R_3 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1.0 CO3nn + 1.0 Hp = 1.0 HCO3n   ; 
+ $EQ_CONSTANT_LOG10
+   10.329       ; LOGK values
+   
+#REACTION ; 
+ $NAME
+   EQ_R_4 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1.0 CO3nn + 2.0 Hp = 1.0 H2CO3  ; 
+ $EQ_CONSTANT_LOG10
+   16.681       ; LOGK values
+   
+#REACTION ; 
+ $NAME
+   EQ_R_5 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1.0 SO4nn + 9.0 Hp + 8.0 en + -4.0 H2O = 1.0 HSn    ; 
+ $EQ_CONSTANT_LOG10
+   33.65       ; LOGK values
+   
+#REACTION ; 
+ $NAME
+   EQ_R_6 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1.0 SO4nn + 10.0 Hp + 8.0 en + -4.0 H2O = 1.0 H2S   ; 
+ $EQ_CONSTANT_LOG10
+   40.644      ; LOGK values
+
+#REACTION ; 
+ $NAME
+   EQ_R_7 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   2.0 NO3n + 12.0 Hp + 10.0 en + -6.0 H2O = 1.0 N2   ; 
+ $EQ_CONSTANT_LOG10
+   207.08      ; LOGK values
+
+#REACTION ; 
+ $NAME
+   EQ_R_8 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1.0 Fepp + -1.0 en = 1.0 Feppp    ; 
+ $EQ_CONSTANT_LOG10
+   -13.02       ; LOGK values
+   
+#REACTION ;
+ $NAME
+   Pyrite_oxidation ;
+ $TYPE
+   MIN_EQ_REACT;
+ $EQUATION
+   16 Hp + 2 SO4nn + 1.0 Fepp + 14.0 en + -8.0 H2O = 1 FeS2 ;
+ $EQ_CONSTANT_LOG10
+   83.5409    ; LOGK values
+   
+#STOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#REACTION ;
+ $NAME
+   Pyrite_oxidation ;
+ $TYPE
+   MIN_EQ_REACT;
+ $EQUATION
+   0.25 Hp + 0.25 SO4nn + 1 Fepp + 1.75 HSn + -1.0 H2O = 1 FeS2 ;
+ $EQ_CONSTANT_LOG10
+   24.6534    ; LOGK values
+   
+
+
+
+#REACTION ; 
+ $NAME
+   EQ_R_1 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1.0 H2O = 1.0 OHn + 1.0 Hp   ; 
+ $EQ_CONSTANT_LOG10
+   -13.9995       ; LOGK values
+   
+#REACTION ; 
+ $NAME
+   EQ_R_2 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1.0 Hp + 1.0 HCO3n  = 1.0 H2CO3      ; 
+ $EQ_CONSTANT_LOG10
+   6.3519       ; LOGK values
+   
+#REACTION ; 
+ $NAME
+   EQ_R_3 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1.0 HCO3n = 1.0 CO3nn + 1.0 Hp      ; 
+ $EQ_CONSTANT_LOG10
+   -10.3289       ; LOGK values
+
+#REACTION ;
+ $NAME
+   Pyrite_oxidation ;
+ $TYPE
+   MIN_EQ_REACT;
+ $EQUATION
+   0.25 Hp + 0.25 SO4nn + 1 Fepp + 1.75 HSn + -1.0 H2O = 1 FeS2 ;
+ $EQ_CONSTANT_LOG10
+   24.6534    ; LOGK values
+   
+   
+   
+
+###########################  $Id: llnl.dat 4023 2010-02-09 21:02:42Z dlpark $  #######
+Pyrite
+        FeS2 +1.0000 H2O  =  + 0.2500 H+ + 0.2500 SO4-- + 1.0000 Fe++ + 1.7500 HS-
+        log_k           -24.6534
+	-delta_H	109.535	kJ/mol	# Calculated enthalpy of reaction	Pyrite
+#	Enthalpy of formation:	-41 kcal/mol
+        -analytic -2.4195e+002 -8.7948e-002 -6.2911e+002 9.9248e+001 -9.7454e+000
+#       -Range:  0-300
+
+
+
+
+ +1.000H2O                  -1.000H+                   = OH-                 
+    log_k     -13.9995
+#    delta_h    55.9043
+#    -a_e   -2.839710E+02 -5.069842E-02  1.332300E+04  1.022445E+02 -1.119669E+06
+    -gamma     10.65    0.00
+
+ +1.000H+                   -1.000H2O                  +1.000HCO3-                = CO2                 
+    log_k       6.3519
+#    delta_h    -9.1092
+#    -a_e    3.563094E+02  6.091964E-02 -2.183437E+04 -1.268339E+02  1.684915E+06
+#    -gamma      0.00    0.00
+
+ -1.000H+                   +1.000HCO3-                = CO3-2               
+    log_k     -10.3289
+#    delta_h    14.9007
+#    -a_e   -1.078871E+02 -3.252849E-02  5.151790E+03  3.892561E+01 -5.637139E+05
+    -gamma      5.40    0.00
+
+#######################################################################################
+
+
+
+
+#REACTION ;
+ $NAME
+   R1 ;
+ $TYPE
+   MIN_EQ_REACT;
+ $EQUATION
+   1 Hp + 1 SO4nn + 4 Fepp + 7 HSn = 4 H2O + 4 FeS2 ;
+ $EQ_CONSTANT
+   18e+24 ; K values
+  
+#REACTION ; 
+ $NAME
+   oxidation_oxygen ;
+ $TYPE
+   USER_EXP;
+ $EQUATION
+  1 CH2O + 1 O2 =  1 CO2 + 1 H2O ; 
+ $USER_EXPRESSION
+  1.0 * 1.57E-9 * mCH2O * mO2 / ( 2.94E-4 + mO2 )
+
+#REACTION ; 
+ $NAME
+   oxidation_nitrate ;
+ $TYPE
+   USER_EXP;
+ $EQUATION
+  5 CH2O + 4 NO3n =  2 N2 + 4 HCO3n + 1 H2CO3 + 2 H2O ; 
+ $USER_EXPRESSION
+  1.0 * 1.57E-9 * mCH2O * 0.01 * mNO3n / ( 1.55E-4 + mNO3n ) / 5.0 
+
+#REACTION ; 
+ $NAME
+   oxidation_sulfate ;
+ $TYPE
+   USER_EXP;
+ $EQUATION
+  2 CH2O + 1 SO4nn =  2 HCO3n + 1 H2S ; 
+ $USER_EXPRESSION
+  1.0 * 1.57E-9 * mCH2O * 6.4E-5 * mSO4nn / ( 1.0E-4 + mSO4nn ) / 2.0  
+  
+#REACTION ;
+ $NAME
+   Pyrite_oxidation ;
+ $TYPE
+   MIN_EQ_REACT;
+ $EQUATION
+   0.25 Hp + 0.25 SO4nn + 1 Fepp + 1.75 HSn = 1 H2O + 1 FeS2 ;
+ $EQ_CONSTANT
+   4.50e+24 ; K values
+  
+#STOP

@@ -1,0 +1,115 @@
+#COMPONENT_PROPERTIES  ; comp0
+ $NAME  ; 
+  C1 ; 
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0            	; diffusion model type, diffusion constant
+  
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  C2 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME
+  C3 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp3
+  $NAME
+  C4 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0            	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp4
+  $NAME
+  C5 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+  
+#COMPONENT_PROPERTIES  ; comp5
+ $NAME  ; 
+  X1 ; 
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0            	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp6
+ $NAME  ; 
+  X2 ; 
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0            	; diffusion model type, diffusion constant
+  
+#COMPONENT_PROPERTIES  ; comp7
+ $NAME
+  X3 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp8
+ $NAME
+  X4 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp9
+  $NAME
+  S ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+  
+#COMPONENT_PROPERTIES  ; comp10
+  $NAME
+  CS1 ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+  
+#COMPONENT_PROPERTIES  ; comp11
+  $NAME
+  CS2 ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  0             	; diffusion model type, diffusion constant
+ 
+#STOP
+
+
+
+
+
+
+
+
+
+#COMPONENT_PROPERTIES  ; comp0
+ $NAME  ; 
+  ConsTracer ; 
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0            	; diffusion model type, diffusion constant
+
+; temperary disable the tracer for now

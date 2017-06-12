@@ -1,0 +1,64 @@
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  Tracer
+  CH2O
+  SO42-
+  O2
+  CO2
+  HCO3-
+  H2S
+  Biomass_oxygen
+  Biomass_sulfate
+  eta_mob_0
+  eta_mob_1
+  eta_mob_2
+  eta_mob_3
+  eta_mob_4
+  eta_mob_5
+  xi_mob_0
+  xi_mob_1
+  xi_mob_rate_0
+  xi_mob_rate_1
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  PVD
+ $TIM_TYPE
+  STEPS 10
+#STOP
+
+
+
+
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  tracer
+  c12h1
+  c13h1
+  c12h2
+  so4
+  o2
+ $GEO_TYPE
+  POLYLINE X_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 10
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  tracer
+  c12h1
+  c13h1
+  c12h2
+  so4
+  o2
+ $GEO_TYPE
+  POLYLINE Y_LINE
+ $DAT_TYPE
+  TECPLOT
+ $TIM_TYPE
+  STEPS 10
+#STOP

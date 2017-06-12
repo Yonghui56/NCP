@@ -1,0 +1,1 @@
+ogs6.exe -i H2_H2O_Diff_IC > result.txt

@@ -1,0 +1,16 @@
+GeoSys-ST: Source Terms ------------------------------------------------
+#SOURCE_TERM
+ $PCS_TYPE
+  DEFORMATION_FLOW
+ $PRIMARY_VARIABLE
+  DISPLACEMENT_Y1
+ $GEO_TYPE
+  POLYLINE TOP
+ $DIS_TYPE
+  CONSTANT_NEUMANN -1000
+#STOP
+
+  LINEAR_NEUMANN 2
+  0 -1000.0
+  1 -1000.0 
+

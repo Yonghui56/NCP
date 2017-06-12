@@ -1,0 +1,105 @@
+#POINTS
+0 0 0 0 
+1 5 0 0 
+2 5 .2 0 
+3 0 .2 0 
+4 0 .125 0 
+5 0 .075 0 
+6 1 0 0 
+7 1 .2 0 
+8 1 .1 0 
+9 0 .13 0 
+10 0 .07 0 
+11 5 .15 0 
+12 5 .155 0 
+#POLYLINE
+ $NAME
+  PLY_BC_RIGHT
+ $EPSILON
+  0.0001
+ $POINTS
+  1
+  2
+#POLYLINE
+ $NAME
+  PLY_BC_LEFT
+ $EPSILON
+  0.0001
+ $POINTS
+  0
+  3
+#POLYLINE
+ $NAME
+  PLY_S1
+ $EPSILON
+  0.0001
+ $POINTS
+  3
+  9
+#POLYLINE
+ $NAME
+  PLY_S2
+ $EPSILON
+  0.0001
+ $POINTS
+  4
+  5
+#POLYLINE
+ $NAME
+  PLY_S3
+ $EPSILON
+  0.0001
+ $POINTS
+  0
+  10
+#POLYLINE
+ $NAME
+  PLY_4
+ $EPSILON
+  0.0001
+ $POINTS
+  6
+  7
+#POLYLINE
+ $NAME
+  PLY_OUT1
+ $EPSILON
+  0.0001
+ $POINTS
+  1
+  11
+#POLYLINE
+ $NAME
+  PLY_OUT2
+ $EPSILON
+  0.0001
+ $POINTS
+  12
+  2
+#POLYLINE
+ $NAME
+  PLY_9
+ $POINTS
+  0
+  6
+  1
+  11
+  12
+  2
+  7
+  3
+  9
+  4
+  5
+  10
+  0
+ $MAT_GROUP
+  8
+#SURFACE
+ $NAME
+  SURF_1
+ $POLYLINES
+  PLY_9
+ $TYPE
+  0
+#STOP

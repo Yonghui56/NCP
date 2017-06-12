@@ -1,0 +1,1 @@
+ogs6.exe -i neckar > result.txt

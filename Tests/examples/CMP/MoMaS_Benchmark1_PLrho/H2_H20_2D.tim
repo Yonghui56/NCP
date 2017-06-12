@@ -1,0 +1,63 @@
+GeoSys-TIM: Timestepping ------------------------------------------------
+#TIME_STEPPING 
+ $PCS_TYPE
+  CMP_PressureForm
+ $TIME_END
+  500000.0
+ $TIME_START
+  0.0
+$TIME_CONTROL
+   NEWTON_ADAPTIVE
+ MAX_TIME_STEP
+     1000
+ MIN_TIME_STEP
+     1
+ ITER_TIMES_AND_MULTIPLYER
+   4
+   0    1.6
+   10   1
+   40   0.5
+   49   0.01  
+#STOP
+
+
+#TIME_STEPPING
+ $PCS_TYPE
+  CMP_PressureForm
+ $TIME_STEPS
+  20000   100
+ $TIME_END
+  20000
+ $TIME_START
+  0.0
+#STOP
+
+
+#TIME_STEPPING 
+ $PCS_TYPE
+  CMP_PressureForm
+ $TIME_END
+  200000.0
+ $TIME_START
+  0.0
+$TIME_CONTROL
+   NEWTON_ADAPTIVE
+ MAX_TIME_STEP
+     1000
+ MIN_TIME_STEP
+     100
+ ITER_TIMES_AND_MULTIPLYER
+   4
+   0    1.6
+   10   1
+   40   0.5
+   49   0.1  
+#STOP
+
+
+
+
+
+
+
+

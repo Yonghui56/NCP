@@ -1,0 +1,62 @@
+#STOP
+
+
+
+
+
+
+
+#SOURCE_TERM
+ $PCS_TYPE
+  GROUNDWATER_FLOW
+ $PRIMARY_VARIABLE 
+  HEAD
+ $GEO_TYPE
+  POLYLINE LEFT_BOUNDARY
+ $DIS_TYPE
+  CONSTANT_NEUMANN  1.25e-3 //  unit length value, do not normalize it // por = 0.3
+
+
+
+
+
+
+  CONSTANT_NEUMANN  1.04166667e-3 //  unit length value, do not normalize it // por = 0.25
+#SOURCE_TERM
+ $PCS_TYPE
+  KIN_REACT_GIA
+ $PRIMARY_VARIABLE 
+  c12h1
+ $GEO_TYPE
+  POLYLINE INJECTION_LINE
+ $DIS_TYPE
+  CONSTANT_NEUMANN  2.8618e-5 //  unit length value, do not normalize it //
+#SOURCE_TERM
+ $PCS_TYPE
+  KIN_REACT_GIA
+ $PRIMARY_VARIABLE 
+  c13h1
+ $GEO_TYPE
+  POLYLINE INJECTION_LINE
+ $DIS_TYPE
+  CONSTANT_NEUMANN  3.1247e-7 //  unit length value, do not normalize it //
+#SOURCE_TERM
+ $PCS_TYPE
+  KIN_REACT_GIA
+ $PRIMARY_VARIABLE 
+  c12h2
+ $GEO_TYPE
+  POLYLINE INJECTION_LINE
+ $DIS_TYPE
+  CONSTANT_NEUMANN  4.1905e-9 // unit length value, do not normalize it //
+#SOURCE_TERM
+ $PCS_TYPE
+  KIN_REACT_GIA
+ $PRIMARY_VARIABLE 
+  tracer
+ $GEO_TYPE
+  POLYLINE INJECTION_LINE
+ $DIS_TYPE
+  CONSTANT_NEUMANN  2.8935e-5 //  unit length value, do not normalize it //
+#STOP
+

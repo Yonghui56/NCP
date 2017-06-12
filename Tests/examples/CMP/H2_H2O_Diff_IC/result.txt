@@ -1,0 +1,46 @@
+
+          ###################################################
+          ##                                               ##
+          ##              OpenGeoSys-Project 6             ##
+          ##                powered by LIS                 ##
+          ##                                               ##
+          ##   Contributors                                ##
+          ##   * Helmholtz Centre for Environmental        ##
+          ##     Research - UFZ                            ##
+          ##   * TU Dresden                                ##
+          ##   * University of Kiel                        ##
+          ##   * University of Edinburgh                   ##
+          ##   * University of Tuebingen (ZAG)             ##
+          ##   * Federal Institute for Geosciences         ##
+          ##     and Natural Resources (BGR)               ##
+          ##   * Helmholtz Centre Potsdam GFZ              ##
+          ##     German Research Centre for Geosciences    ##
+          ##                                               ##
+          ##   Program version                             ##
+          ##   * Version: 0.1.0(NW)                        ##
+          ##   * Date   : 05.07.2012                       ##
+          ##                                               ##
+          ###################################################
+
+
+->Parsing input arguments
+* project path     : H2_H2O_Diff_IC
+* output directory : 
+->Reading a property file...
+->Reading OGS5 input files...
+-------------------------------------------------
+PCSRead ... done, read 1 processes
+MFPRead ... done, read 2 fluid properties
+MSPRead ... done, read 1 solid properties
+MMPRead ... done, read 1 medium properties
+CPRead
+BCRead ... done, read 2 boundary conditions
+STRead ... done, read 0 source terms
+ICRead ... done, read 2 initial conditions
+OUTRead ... done, read 1 output settings
+TIMRead ... done, read 1 time stepping properties
+NUMRead ... done, read 1 numeric properties
+GEOLIB::readGLIFile open stream from file H2_H2O_Diff_IC.gli ... done
+read points from stream ...  ok, 6 points read
+read polylines from stream ...  ok, 4 polylines read
+MSHRead:  ASCII file

@@ -1,0 +1,1 @@
+ogs6.exe -i Waste_pack_case1 > result.txt

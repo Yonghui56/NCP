@@ -1,0 +1,1 @@
+ogs6.exe -i Drum_2D > result.txt

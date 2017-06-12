@@ -1,0 +1,95 @@
+
+          ###################################################
+          ##                                               ##
+          ##               OpenGeoSys-Project              ##
+          ##                                               ##
+          ##  Helmholtz Center for Environmental Research  ##
+          ##    UFZ Leipzig - Environmental Informatics    ##
+          ##                  TU Dresden                   ##
+          ##              University of Kiel               ##
+          ##            University of Edinburgh            ##
+          ##         University of Tuebingen (ZAG)         ##
+          ##       Federal Institute for Geosciences       ##
+          ##          and Natural Resources (BGR)          ##
+          ##                                               ##
+          ##      Version 5.1.01(BG)  Date 17.03.2011      ##
+          ##                                               ##
+          ###################################################
+
+          File name (without extension): strack
+            
+---------------------------------------------
+Data input:
+GEOLIB::readGLIFile open stream from file strack.gli ... done
+read points from stream ...  ok, 6 points read
+read polylines from stream ...  ok, 4 polylines read
+read surfaces from stream ... triangulation of surface: ... done - 2 triangles 
+readSurfaces: number of read polygons  1
+ ok, 1 surfaces read
+PCSRead ... done, read 1 processes
+BCRead ... done, read 2 boundary conditions
+STRead
+ICRead
+OUTRead
+TIMRead
+MFPRead
+MSPRead
+MMPRead ... done, read 2 medium properties
+NUMRead
+MSHRead: ASCII file
+DOMRead: no DDC file
+---------------------------------------------
+Create PCS processes
+CRFProcess::Config LIQUID_FLOW
+.............................................
+Create: LIQUID_FLOW
+ for PRESSURE1  pcs_component_number -1
+->Create MMP
+->Create NUM
+->Create EQS
+->Create TIM
+->Create BC
+*****
+linear nodes along polyline 002687C8(min_edge_length = 0.01): 
+0 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 
+distances of linear nodes along polyline 002687C8(min_edge_length = 0.01): 
+10 20 19.899 19.798 19.697 19.596 19.4949 19.3939 19.2929 19.1919 19.0909 18.9899 18.8889 18.7879 18.6869 18.5859 18.4848 18.3838 18.2828 18.1818 18.0808 17.9798 17.8788 17.7778 17.6768 17.5758 17.4747 17.3737 17.2727 17.1717 17.0707 16.9697 16.8687 16.7677 16.6667 16.5657 16.4646 16.3636 16.2626 16.1616 16.0606 15.9596 15.8586 15.7576 15.6566 15.5556 15.4545 15.3535 15.2525 15.1515 15.0505 14.9495 14.8485 14.7475 14.6465 14.5455 14.4444 14.3434 14.2424 14.1414 14.0404 13.9394 13.8384 13.7374 13.6364 13.5354 13.4343 13.3333 13.2323 13.1313 13.0303 12.9293 12.8283 12.7273 12.6263 12.5253 12.4242 12.3232 12.2222 12.1212 12.0202 11.9192 11.8182 11.7172 11.6162 11.5152 11.4141 11.3131 11.2121 11.1111 11.0101 10.9091 10.8081 10.7071 10.6061 10.5051 10.404 10.303 10.202 10.101 
+number of linear nodes along polyline 002687C8: 100, number of higher order nodes: 0
+****** computed 100 nodes for polyline 002687C8 - 11568
+*****
+linear nodes along polyline 00268830(min_edge_length = 0.01): 
+99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 
+distances of linear nodes along polyline 00268830(min_edge_length = 0.01): 
+10 10.101 10.202 10.303 10.404 10.5051 10.6061 10.7071 10.8081 10.9091 11.0101 11.1111 11.2121 11.3131 11.4141 11.5152 11.6162 11.7172 11.8182 11.9192 12.0202 12.1212 12.2222 12.3232 12.4242 12.5253 12.6263 12.7273 12.8283 12.9293 13.0303 13.1313 13.2323 13.3333 13.4343 13.5354 13.6364 13.7374 13.8384 13.9394 14.0404 14.1414 14.2424 14.3434 14.4444 14.5455 14.6465 14.7475 14.8485 14.9495 15.0505 15.1515 15.2525 15.3535 15.4545 15.5556 15.6566 15.7576 15.8586 15.9596 16.0606 16.1616 16.2626 16.3636 16.4646 16.5657 16.6667 16.7677 16.8687 16.9697 17.0707 17.1717 17.2727 17.3737 17.4747 17.5758 17.6768 17.7778 17.8788 17.9798 18.0808 18.1818 18.2828 18.3838 18.4848 18.5859 18.6869 18.7879 18.8889 18.9899 19.0909 19.1919 19.2929 19.3939 19.4949 19.596 19.697 19.798 19.899 20 
+number of linear nodes along polyline 00268830: 100, number of higher order nodes: 0
+****** computed 100 nodes for polyline 00268830 - 11568
+->Create ST
+->Config ELE values
+->Config NOD values
+->Assign IC
+RFR: no restart data
+Checking output data 
+
+
+***Start time steps
+
+
+#############################################################
+Time step: 1|  Time: 1|  Time step size: 1
+    PCS non-linear iteration: 0/1
+    ->Process 0: LIQUID_FLOW
+      Calculate element matrices
+      Assemble equation system
+	  SpBICGSTAB iteration: 431/1000 
+      PCS error: 496465
+Coupling loop: 1 of 1
+This step is accepted.
+
+#############################################################
+----------------------------------------------------
+|Acccepted step times |1  |Rejected step times |0
+----------------------------------------------------
+GetRFProcessProcessingAndActivation - to be removed
+
+^O^: Your simulation is terminated normally ^O^ 
+Simulation time: 6s

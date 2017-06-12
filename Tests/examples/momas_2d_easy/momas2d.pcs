@@ -1,0 +1,15 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+   GROUNDWATER_FLOW
+ $NUM_TYPE
+   NEW  
+#PROCESS
+ $PCS_TYPE
+   REACT_GIA_REDUCT
+ $NUM_TYPE
+   NEW  
+#STOP
+
+
+

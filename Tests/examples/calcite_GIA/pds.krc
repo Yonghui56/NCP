@@ -1,0 +1,77 @@
+GeoSys Reactions
+#KINREACTIONDATA      
+ $ACTIVITY_MODEL
+    2 ; constant activity coefficient = 0, DH = 1, Davies = 2
+
+#REACTION ; 
+ $NAME
+   R1 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 H+ + 1 CO32- = 1 HCO3- ; 
+ $EQ_CONSTANT_LOG10
+ 10.3289           ; K values
+ 
+#REACTION ; 
+ $NAME
+   R2 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 Ca2+ + 1 CO32- = 1 CaCO3 ; 
+ $EQ_CONSTANT_LOG10
+ 3.2241           ; K values
+ 
+#REACTION ; 
+ $NAME
+   R3 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 Ca2+ + 1 H+ + 1 CO32- = 1 CaHCO3+ ; 
+ $EQ_CONSTANT_LOG10
+ 11.4346           ; K values
+ 
+#REACTION ; 
+ $NAME
+   R4 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 Mg2+ + 1 CO32- = 1 MgCO3 ; 
+ $EQ_CONSTANT_LOG10
+ 2.9796         ; K values
+ 
+#REACTION ; 
+ $NAME
+   R5 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 Mg2+ + 1 H+ + 1 CO32- = 1 MgHCO3+ ; 
+ $EQ_CONSTANT_LOG10
+ 11.3971           ; K values
+
+#REACTION ; 
+ $NAME
+   R2 ;
+ $TYPE
+   MIN_EQ_REACT;
+ $EQUATION
+   1 CO32- + 1 Ca2+ = 1 Calcite;
+ $EQ_CONSTANT_LOG10
+ 8.4799           ; K values
+
+#REACTION ; 
+ $NAME
+   R3 ;
+ $TYPE
+   MIN_EQ_REACT;
+ $EQUATION
+   2 CO32- + 1 Ca2+ + 1 Mg2+ = 1 Dolomite(dis); 
+ $EQ_CONSTANT_LOG10
+   16.5398          ; K values
+   
+#STOP
+

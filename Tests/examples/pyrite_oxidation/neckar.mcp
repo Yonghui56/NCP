@@ -1,0 +1,204 @@
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  Hp ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  1.0
+ $COMP_TYPE
+  BASIS_COMP  
+  
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME
+  en ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  -1.0
+ $COMP_TYPE
+  BASIS_COMP  
+  
+#COMPONENT_PROPERTIES  ; comp3
+ $NAME
+  H2O ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  BASIS_COMP
+
+#COMPONENT_PROPERTIES  ; comp4
+ $NAME
+  CO3nn ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  -2.0
+ $COMP_TYPE
+  BASIS_COMP  
+
+#COMPONENT_PROPERTIES  ; comp5
+ $NAME
+  SO4nn ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  -2.0
+ $COMP_TYPE
+  BASIS_COMP
+
+#COMPONENT_PROPERTIES  ; comp6
+ $NAME
+  NO3n ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  -1.0
+ $COMP_TYPE
+  BASIS_COMP
+
+#COMPONENT_PROPERTIES  ; comp7
+ $NAME
+  Fepp ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  2.0
+ $COMP_TYPE
+  BASIS_COMP  
+
+#COMPONENT_PROPERTIES  ; comp8
+ $NAME
+  O2 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+   0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp9
+ $NAME
+  H2 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+
+#COMPONENT_PROPERTIES  ; comp10
+ $NAME
+  HCO3n ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  -1.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp11
+ $NAME
+  H2CO3 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp12
+ $NAME
+  HSn ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  -1.0
+ $COMP_TYPE
+  AQ_PHASE_COMP  
+  
+#COMPONENT_PROPERTIES  ; comp13
+ $NAME
+  H2S ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+
+#COMPONENT_PROPERTIES  ; comp14
+ $NAME
+  N2 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp15
+ $NAME
+  Feppp ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  3.0
+ $COMP_TYPE
+  AQ_PHASE_COMP  
+  
+#COMPONENT_PROPERTIES  ; comp16
+ $NAME
+  FeS2 ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  MIN_PHASE_COMP
+
+#COMPONENT_PROPERTIES  ; comp17
+ $NAME
+  CH2O ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  1e-9             	; diffusion model type, diffusion constant
+ $CHARGE
+   0.0
+ $COMP_TYPE
+  KIN_COMP
+#STOP

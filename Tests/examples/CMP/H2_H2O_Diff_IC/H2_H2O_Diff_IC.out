@@ -1,0 +1,53 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  LIQUID_PRESSURE
+  MOLAR_FRACTION
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  PVD
+ $TIM_TYPE
+ STEPS 10
+#STOP
+STEPS 1
+
+
+#OUTPUT // profile
+ $NOD_VALUES
+  Ca
+  Cl
+  K
+  Na
+  CaX2
+  NaX
+  KX
+ $GEO_TYPE
+  POINT  POINT2
+ $DAT_TYPE
+  PVD
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  Ca
+  Cl
+  K
+  Na
+  CaX2
+  NaX
+  KX
+ $GEO_TYPE
+  POLYLINE  OUT_LINE
+ $DAT_TYPE
+  PVD
+ $TIM_TYPE
+  STEPS 1
+
+
+ $TIM_TYPE
+   0.0
+   180.0
+   360.0
+   8640.0
+   86400.0
+

@@ -1,0 +1,23 @@
+GeoSys-IC  Initial Conditions ------------------------------------------------
+#INITIAL_CONDITION
+ $PCS_TYPE
+  CMP_CapPresFormular
+ $PRIMARY_VARIABLE 
+  NONWET_PRESSURE
+ $GEO_TYPE
+  DOMAIN
+ $DIS_TYPE
+  CONSTANT 0.0
+
+#INITIAL_CONDITION
+ $PCS_TYPE
+  CMP_CapPresFormular
+ $PRIMARY_VARIABLE 
+  CAPILLARY_PRESSURE
+ $GEO_TYPE
+  DOMAIN
+ $DIS_TYPE
+  CONSTANT -1E+6
+#STOP
+
+

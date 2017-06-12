@@ -1,0 +1,50 @@
+GeoSys-OUT: Output ------------------------------------------------
+#OUTPUT // profile
+ $NOD_VALUES
+  HEAD
+  CH2O
+  O2
+  CO2
+  H2O
+  NO3n
+  N2
+  CO3nn
+  HCO3n
+  H2CO3
+  SO4nn
+  H2S
+  Hp
+  OHn
+  Fepp
+  Feppp
+  en
+  HSn
+  FeS2
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  PVD 
+ $TIM_TYPE
+  STEPS 10
+#STOP
+
+
+
+
+  STEPS 5
+  
+#OUTPUT // profile
+ $ELE_VALUES
+  VELOCITY1_X
+  VELOCITY1_Y
+  VELOCITY1_Z
+ $GEO_TYPE
+  DOMAIN
+ $DAT_TYPE
+  VTK
+ $TIM_TYPE
+   0.0
+   100.0
+   1000.0
+   10000.0
+   21000.0

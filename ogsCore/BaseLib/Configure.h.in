@@ -1,0 +1,48 @@
+/**
+ * Copyright (c) 2012, OpenGeoSys Community (http://www.opengeosys.com)
+ *            Distributed under a Modified BSD License.
+ *              See accompanying file LICENSE.txt or
+ *              http://www.opengeosys.com/LICENSE.txt
+ *
+ *
+ * \file Configure.h.in
+ *
+ * #defines which gets set through CMake
+ */
+ #ifndef CONFIGURE_H
+ #define CONFIGURE_H
+
+// Type sizes
+#cmakedefine SIZEOF_INT ${SIZEOF_INT}
+#cmakedefine SIZEOF_LONG ${SIZEOF_LONG}
+#cmakedefine SIZEOF_LONG_LONG ${SIZEOF_LONG_LONG}
+#cmakedefine SIZEOF_VOID_P ${SIZEOF_VOID_P}
+
+// Has includes?
+#cmakedefine HAVE_DLFCN_H
+#cmakedefine HAVE_INTTYPES_H
+#cmakedefine HAVE_MALLOC_H
+#cmakedefine HAVE_MEMORY_H
+#cmakedefine HAVE_STDINT_H
+#cmakedefine HAVE_STDLIB_H
+#cmakedefine HAVE_STRINGS_H
+#cmakedefine HAVE_STRING_H
+#cmakedefine HAVE_SYS_STAT_H
+#cmakedefine HAVE_SYS_TIME_H
+#cmakedefine HAVE_SYS_TYPES_H
+#cmakedefine HAVE_UNISTD_H
+#cmakedefine HAVE_SYS_MOUNT_H
+
+#define OGS_QT_VERSION ${QT_VERSION_MAJOR}${QT_VERSION_MINOR}
+#define SOURCEPATH "${CMAKE_SOURCE_DIR}"
+
+#cmakedefine OGS_VERSION "${OGS_VERSION}"
+#cmakedefine OGS_DATE "${OGS_DATE}"
+
+// for tests
+#cmakedefine OGS_EXECUTABLE "${OGS_EXECUTABLE}"
+#define PUT_TMP_DIR_IN "${PROJECT_BINARY_DIR}/tests/"
+
+#cmakedefine PROCESSOR_COUNT ${PROCESSOR_COUNT}
+
+#endif // CONFIGURE_H

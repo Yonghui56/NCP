@@ -1,0 +1,33 @@
+GeoSys-CP: Component Properties ------------------------------------------------
+
+#COMPONENT_PROPERTIES  ; comp0
+ $NAME
+  Tracer ;
+ $MOBILE 
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+ 
+#COMPONENT_PROPERTIES  ; comp0
+ $NAME
+  Decay_Father ;
+ $MOBILE 
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+
+#COMPONENT_PROPERTIES  ; comp0
+ $NAME
+  Decay_Daughter ;
+ $MOBILE 
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $CHARGE
+  0.0
+ $COMP_TYPE
+  AQ_PHASE_COMP
+
+#STOP

@@ -1,0 +1,8 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+ CMP_GlobalComplementaryForm
+ $NUM_TYPE
+   NEW   
+#STOP
+

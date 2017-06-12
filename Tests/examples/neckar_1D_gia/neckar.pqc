@@ -1,0 +1,54 @@
+SOLUTION 1
+    temp      10
+    pH        7        # comp 4
+    pe        4        # comp 5
+    redox     pe
+    units     mol/kgw
+    density   1
+    N(5)      0.000484  # comp 1
+    S(6)      0.000484  # comp 2
+    K         0.0015    # comp 6
+    O(0)      6e-4      # comp 3
+    -water    1 # kg
+#ende
+	
+KINETICS
+Toc  # comp 7
+-formula CH2O 1
+-m 2
+-tol 1e-008
+-steps 1e6 in 1 steps # seconds
+#-step_divide 1
+#-runge_kutta 3
+#-bad_step_max 500
+#INCREMENTAL_REACTIONS true
+#ende
+
+RATES
+Toc
+-start
+10 if (m <= 1e-8) then goto 200
+20  mO2 = mol("O2")
+30  mNO3 = tot("N(5)")
+40  mSO4 = tot("S(6)")
+50 if (mSO4 <= 1e-8) then goto 200
+60  rate = 1.57e-9*(mO2/(2.94e-4 + mO2) + 0.01*mNO3/(1.55e-4 + mNO3)+6.4e-5*mSO4/(1.e-4 + mSO4))
+90  moles = rate * m * time
+100  if (moles > m) then moles = m
+200 save moles
+-end
+#ende
+
+SELECTED_OUTPUT
+-file phout_sel.dat
+-high_precision
+-reset false
+#ende
+
+USER_PUNCH 
+20 PUNCH TOT("N(5)"), TOT("S(6)"), TOT("O(0)") 
+30 PUNCH -LA("H+"), -LA("e-") 
+40 PUNCH -KIN("Toc")
+#ende
+END
+

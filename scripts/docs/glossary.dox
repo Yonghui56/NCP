@@ -1,0 +1,16 @@
+/** \page Glossary
+ *
+ * \section intro_sec Glossary
+ *
+ * This page describes definitions of technical terms used in the project:
+ *
+ * - Mesh
+ * - Node
+ * - Element
+ * - Edge
+ * - Face
+ * - Finite element method (FEM)
+ * - 
+ * - 
+ *
+ */

@@ -1,0 +1,1 @@
+ogs6.exe -i h2_water_2d > result.txt

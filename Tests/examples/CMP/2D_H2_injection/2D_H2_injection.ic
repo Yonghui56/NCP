@@ -1,0 +1,25 @@
+GeoSys-IC  Initial Conditions ------------------------------------------------
+#INITIAL_CONDITION
+ $PCS_TYPE
+  CMP_PressureForm
+ $PRIMARY_VARIABLE 
+  LIQUID_PRESSURE
+ $GEO_TYPE
+  DOMAIN
+ $DIS_TYPE
+  CONSTANT 1.0E+6
+
+#INITIAL_CONDITION
+ $PCS_TYPE
+  CMP_PressureForm
+ $PRIMARY_VARIABLE 
+  MOLAR_FRACTION
+ $GEO_TYPE
+  DOMAIN
+ $DIS_TYPE
+  CONSTANT 1e-5
+
+
+#STOP
+
+

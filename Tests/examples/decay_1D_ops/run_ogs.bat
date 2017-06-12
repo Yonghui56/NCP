@@ -1,0 +1,1 @@
+ogs6.exe -i HC_decay_1Du > result.txt

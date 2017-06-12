@@ -1,0 +1,90 @@
+GeoSys Kinetic Reactions
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	1                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-6		 ; rel. Error
+ $MIN_TIMESTEP	
+	1.e-6		; min Timestep
+ $INITIAL_TIMESTEP	
+	1.e-4       ; init Timestep
+ $BACTERIACAPACITY
+  100.0
+ $NO_REACTIONS
+   POLYLINE PLY_BC_LEFT
+
+#REACTION ; 
+ $NAME
+   R1 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   -1 C1 =  1 X2; 
+ $EQ_CONSTANT
+ 1.0e-12         ; K values
+
+#REACTION ; 
+ $NAME
+   R2 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 X2 + 1 X3 =  1 C2 ; 
+ $EQ_CONSTANT
+ 1.0            ; K values
+
+#REACTION ; 
+ $NAME
+   R3 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   1 X4 =  1 C3 + 1 X2 ;
+ $EQ_CONSTANT
+ 1.0            ; K values
+
+#REACTION ; 
+ $NAME
+   R4 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   3 X4 + 1 X3 =  1 C4 + 4 X2 ; 
+ $EQ_CONSTANT
+ 0.1            ; K values
+   
+#REACTION ; 
+ $NAME
+   R5 ;
+ $TYPE
+   MOB_EQ_REACT;
+ $EQUATION
+   4 X2 + 3 X3 + 1 X4 =  1 C5 ; 
+ $EQ_CONSTANT
+ 1.0e35          ; K values
+
+#REACTION ; 
+ $NAME
+   R6 ;
+ $TYPE
+   SORP_EQ_REACT;
+ $EQUATION
+   3 X2 + 1 X3 + 1 S =  1 CS1 ;
+ $EQ_CONSTANT
+ 1.0e6           ; K values
+
+#REACTION ; 
+ $NAME
+   R7 ;
+ $TYPE
+   SORP_EQ_REACT;
+ $EQUATION
+   2 S + 1 X4 =  1 CS2 + 3 X2 ; 
+ $EQ_CONSTANT
+ 0.1            ; K values
+   
+#STOP
+
+
+
+

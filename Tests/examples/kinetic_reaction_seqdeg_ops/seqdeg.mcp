@@ -1,0 +1,100 @@
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  Tracer ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp2
+ $NAME
+  CH2O ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp3
+ $NAME
+  SO42- ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp4
+ $NAME
+  O2 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp5
+ $NAME
+  CO2 ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp6
+ $NAME
+  HCO3- ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp7
+ $NAME
+  H2S ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp8
+ $NAME
+  H2O ;
+ $MOBILE
+  1; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  AQ_PHASE_COMP
+  
+#COMPONENT_PROPERTIES  ; comp9
+ $NAME
+  Biomass_oxygen ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  KIN_COMP
+  
+#COMPONENT_PROPERTIES  ; comp10
+ $NAME
+  Biomass_sulfate ;
+ $MOBILE
+  0; MOBILE-Flag: 0=imMOBILEe, 1=MOBILEe/transported
+ $DIFFUSION
+  1  0.0             	; diffusion model type, diffusion constant
+ $COMP_TYPE
+  KIN_COMP
+#STOP

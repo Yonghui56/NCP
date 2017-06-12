@@ -1,0 +1,38 @@
+GeoSys Kinetic Reactions
+#KINREACTIONDATA      
+ $SOLVER_TYPE
+	1                ; Solver type
+ $RELATIVE_ERROR	
+	1.e-6		 ; rel. Error
+ $MIN_TIMESTEP	
+	1.e-6		; min Timestep
+ $INITIAL_TIMESTEP	
+	1.e-4       ; init Timestep
+ $BACTERIACAPACITY
+  100.0
+ $NO_REACTIONS
+   POLYLINE PLY_BC_LEFT
+
+#REACTION ; 
+ $NAME
+   DoubleMonod ;
+ $TYPE
+   USER_EXP;
+ $EQUATION
+  1 Comp_A + 1 Comp_B =  1 Comp_C; 
+ $USER_EXPRESSION
+  mComp_A / (8.33e-5 + mComp_A) * mComp_B / (3.13e-5 + mComp_B) * 1.15741e-5 * mBiomass
+  
+#REACTION ; 
+ $NAME
+   DoubleMonodDecay ;
+ $TYPE
+   USER_EXP;
+ $EQUATION
+  1 Biomass =  1 Biomass_dummy; 
+ $USER_EXPRESSION
+  -1.0 * mComp_A / (8.33e-5 + mComp_A) * mComp_B / (3.13e-5 + mComp_B) * 1.15741e-5 * mBiomass + 1.15741e-6 * mBiomass
+  
+#STOP
+
+

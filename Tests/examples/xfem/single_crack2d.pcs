@@ -1,0 +1,8 @@
+GeoSys-PCS: Processes ------------------------------------------------
+#PROCESS
+ $PCS_TYPE
+  XFEM_EXAMPLE_CRACK1
+ $NUM_TYPE
+  NEW
+#STOP
+

@@ -1,0 +1,37 @@
+#POINTS
+0 0 0 0
+1 180 0 0
+2 180 20 0
+3 200 20 0
+4 200 200 0
+5 20 200 0
+6 20 180 0
+7 0 180 0
+#POLYLINE
+ $NAME
+  PLY_IN
+ $POINTS
+  1
+  2
+  3
+#POLYLINE
+ $NAME
+  PLY_OUT
+ $POINTS
+  5
+  6
+  7
+#POLYLINE
+ $NAME
+  PLY_ALL
+ $POINTS
+  0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  0
+#STOP

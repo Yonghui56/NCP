@@ -1,0 +1,22 @@
+GeoSys-CP: Component Properties ------------------------------------------------
+
+#COMPONENT_PROPERTIES  ; comp0
+ $NAME
+  Hydrogen ;
+ $MOBILE 
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  0           	; diffusion model type, diffusion constant
+
+#COMPONENT_PROPERTIES  ; comp1
+ $NAME
+  Water ;
+ $MOBILE
+  1; MOBIL-Flag: 0=immobile, 1=mobile/transported
+ $DIFFUSION
+  1  9.467e-2          ; diffusion model type, diffusion constant
+
+
+
+
+#STOP

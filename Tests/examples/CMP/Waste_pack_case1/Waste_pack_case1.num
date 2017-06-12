@@ -1,0 +1,14 @@
+GeoSys-NUM: Numerical Parameter ----------------------------------------
+#NUMERICS
+ $PCS_TYPE
+  CMP_TotalDensityForm
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  9     5    1.e-12       5000       0.5     100       2
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+  NEWTON_LINESEARCH   1e-7   1e-12    50       0.0
+#STOP
+
+; method error_tolerance max_iterations theta precond storage
+  9      5    1.e-14       5000       1.0     100       2

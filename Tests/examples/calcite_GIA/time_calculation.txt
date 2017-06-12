@@ -1,0 +1,35 @@
+========= Testing of calcite_GIA with different time stepping settings =========
+
+A is the time to formulate calculate linear system. 
+B is the time to formulate and calculate global system. 
+C is the time to calculate all local problems ones. 
+
+let D = B + C; 
+
+98 steps * 3 etas * A  +  98 steps * 5 iterations * ( B + C) = 41 sec
+40 steps * 3 etas * A  +  40 steps * 10 iterations * (B + C) = 27 sec
+
+so, 
+
+294 A + 490 D = 41  ... (1)
+120 A + 400 D = 27  ... (2)
+
+(2) * 2.5 :
+
+300 A + 1000 D = 67.5 ... (3)
+300 A + 500  D = 42   ... (4) approx. (1)
+
+(3) - (4) : 
+500 D = 25.5
+we take D = 0.05
+
+back substitute into (3): 
+300 A + 50 = 67.5
+A = 0.058 
+
+back check (2): 
+120 * 0.058 + 400 * 0.05 = 6.96 + 20 = 26.96 very close to 27! 
+
+As a conclusion, we have figured out: 
+A, as the time to formulate and calculate one linear system is about 0.058 sec. 
+D, as the time to formulate and calculate one global non-linear system with the local problem, is about 0.05 sec. 

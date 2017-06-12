@@ -1,0 +1,1641 @@
+
+          ###################################################
+          ##                                               ##
+          ##              OpenGeoSys-Project 6             ##
+          ##                powered by LIS                 ##
+          ##                                               ##
+          ##   Contributors                                ##
+          ##   * Helmholtz Centre for Environmental        ##
+          ##     Research - UFZ                            ##
+          ##   * TU Dresden                                ##
+          ##   * University of Kiel                        ##
+          ##   * University of Edinburgh                   ##
+          ##   * University of Tuebingen (ZAG)             ##
+          ##   * Federal Institute for Geosciences         ##
+          ##     and Natural Resources (BGR)               ##
+          ##   * Helmholtz Centre Potsdam GFZ              ##
+          ##     German Research Centre for Geosciences    ##
+          ##                                               ##
+          ##   Program version                             ##
+          ##   * Version: 0.1.0(NW)                        ##
+          ##   * Date   : 05.07.2012                       ##
+          ##                                               ##
+          ###################################################
+
+
+->Parsing input arguments
+* project path     : H2_H20_2D
+* output directory : 
+->Reading a property file...
+->Reading OGS5 input files...
+-------------------------------------------------
+PCSRead ... done, read 1 processes
+MFPRead ... done, read 2 fluid properties
+MSPRead ... done, read 1 solid properties
+MMPRead ... done, read 1 medium properties
+CPRead
+BCRead ... done, read 2 boundary conditions
+STRead ... done, read 2 source terms
+ICRead ... done, read 2 initial conditions
+OUTRead ... done, read 1 output settings
+TIMRead ... done, read 1 time stepping properties
+NUMRead ... done, read 1 numeric properties
+GEOLIB::readGLIFile open stream from file H2_H20_2D.gli ... done
+read points from stream ...  ok, 4 points read
+read polylines from stream ...  ok, 3 polylines read
+MSHRead:  ASCII file
+-------------------------------------------------
+->Constructing meshes... 1 mesh loaded
+-> calculate mesh geometric properties
+* min. edge length = 3.447462
+->mesh id 0: dim=2, nodes=206, elements=326
+->Generating coupling system...
+->Initializing all processes...
+PCS 0: name=CMP_TotalDensityForm, type=CMP_TotalDensityForm (IN=0, OUT=2)
+* OUT 0: MEAN_PRESSURE
+* OUT 1: TOTAL_MASS_DENSITY
+->setting up a solution algorithm SingleStepFEM
+* Variable 0: name=MEAN_PRESSURE, order=1, n_dof=206
+* Variable 1: name=TOTAL_MASS_DENSITY, order=1, n_dof=206
+* Total number of DoFs = 412
+->Setting up a solution algorithm for CMP_TotalDensityForm problem.
+* Variable 0: name=MEAN_PRESSURE, order=1, n_dof=206
+* Variable 1: name=TOTAL_MASS_DENSITY, order=1, n_dof=206
+* Total number of DoFs = 412
+->Setting time stepping...
+->Outputting the initial values...
+Writing results...: H2_H20_2D_0.vtu
+->Simulation is ready! start=0.000000, end=500000.000000
+
+#############################################################
+Time step 1: t=1.000000 s, dt=1.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.713e-005, ||dx||_inf=0.000e+000, ||x||_inf=1.000e+006, ||dx||/||x||=0.000e+000
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 30/5000
+	 residuals: 4.724793e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=9.085e-012, ||dx||_inf=3.680e-001, ||x||_inf=1.000e+006, ||dx||/||x||=3.680e-007
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 9.085e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 2: t=2.600000 s, dt=1.600000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.701e-005, ||dx||_inf=3.680e-001, ||x||_inf=1.000e+006, ||dx||/||x||=3.680e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 30/5000
+	 residuals: 6.408234e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=5.094e-011, ||dx||_inf=5.541e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.541e-007
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 5.094e-011 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 3: t=5.160000 s, dt=2.560000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.679e-005, ||dx||_inf=5.541e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.541e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 30/5000
+	 residuals: 4.241627e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=2.594e-012, ||dx||_inf=8.070e-001, ||x||_inf=1.000e+006, ||dx||/||x||=8.070e-007
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 2.594e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 4: t=9.256000 s, dt=4.096000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.640e-005, ||dx||_inf=8.070e-001, ||x||_inf=1.000e+006, ||dx||/||x||=8.070e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 30/5000
+	 residuals: 5.149709e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=6.809e-013, ||dx||_inf=1.120e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.120e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 6.809e-013 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 5: t=15.809600 s, dt=6.553600 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.571e-005, ||dx||_inf=1.120e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.120e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 30/5000
+	 residuals: 3.875696e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=4.381e-013, ||dx||_inf=1.459e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.459e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 4.381e-013 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 6: t=26.295360 s, dt=10.485760 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.451e-005, ||dx||_inf=1.459e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.459e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 30/5000
+	 residuals: 3.296863e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=5.300e-013, ||dx||_inf=1.766e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.766e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 5.300e-013 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 7: t=43.072576 s, dt=16.777216 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.253e-005, ||dx||_inf=1.766e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.766e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 29/5000
+	 residuals: 9.310749e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=7.243e-013, ||dx||_inf=2.072e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.072e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 7.243e-013 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 8: t=69.916122 s, dt=26.843546 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=2.961e-005, ||dx||_inf=2.072e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.072e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 29/5000
+	 residuals: 6.962677e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=7.275e-013, ||dx||_inf=2.568e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.568e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 7.275e-013 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 9: t=112.865795 s, dt=42.949673 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=2.585e-005, ||dx||_inf=2.568e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.568e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 29/5000
+	 residuals: 3.156958e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=8.961e-013, ||dx||_inf=3.209e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.209e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 8.961e-013 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 10: t=181.585271 s, dt=68.719477 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=2.176e-005, ||dx||_inf=3.209e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.209e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 29/5000
+	 residuals: 3.629074e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=3.044e-012, ||dx||_inf=3.925e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.925e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 3.044e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+Writing results...: H2_H20_2D_10.vtu
+
+#############################################################
+Time step 11: t=291.536434 s, dt=109.951163 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=1.790e-005, ||dx||_inf=3.925e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.925e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 29/5000
+	 residuals: 4.893083e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=1.438e-012, ||dx||_inf=4.770e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.770e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 1.438e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 12: t=467.458295 s, dt=175.921860 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=1.456e-005, ||dx||_inf=4.770e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.770e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 30/5000
+	 residuals: 2.727016e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=1.705e-012, ||dx||_inf=5.856e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.855e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 1.705e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 13: t=748.933271 s, dt=281.474977 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=1.220e-005, ||dx||_inf=5.856e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.855e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 31/5000
+	 residuals: 3.309816e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=4.375e-012, ||dx||_inf=7.263e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.262e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 4.375e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 14: t=1199.293234 s, dt=450.359963 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=1.024e-005, ||dx||_inf=7.263e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.262e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 33/5000
+	 residuals: 3.445290e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=5.701e-012, ||dx||_inf=9.078e+000, ||x||_inf=1.000e+006, ||dx||/||x||=9.077e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 5.701e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 15: t=1919.869174 s, dt=720.575940 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=8.634e-006, ||dx||_inf=9.078e+000, ||x||_inf=1.000e+006, ||dx||/||x||=9.077e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 35/5000
+	 residuals: 7.011749e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=6.724e-012, ||dx||_inf=1.141e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.141e-005
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 6.724e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 16: t=2919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=7.134e-006, ||dx||_inf=1.141e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.141e-005
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 3.408022e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=8.479e-012, ||dx||_inf=1.262e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.262e-005
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 8.479e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 17: t=3919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=5.943e-006, ||dx||_inf=1.262e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.262e-005
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 4.406201e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=6.885e-012, ||dx||_inf=1.053e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.053e-005
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 6.885e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 18: t=4919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=5.209e-006, ||dx||_inf=1.053e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.053e-005
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 3.279963e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=5.096e-012, ||dx||_inf=9.251e+000, ||x||_inf=1.000e+006, ||dx||/||x||=9.251e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 5.096e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 19: t=5919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=4.693e-006, ||dx||_inf=9.251e+000, ||x||_inf=1.000e+006, ||dx||/||x||=9.251e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 4.711861e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=6.968e-012, ||dx||_inf=8.347e+000, ||x||_inf=1.000e+006, ||dx||/||x||=8.346e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 6.968e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 20: t=6919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=4.306e-006, ||dx||_inf=8.347e+000, ||x||_inf=1.000e+006, ||dx||/||x||=8.346e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 4.964803e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=6.600e-012, ||dx||_inf=7.667e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.667e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 6.600e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+Writing results...: H2_H20_2D_20.vtu
+
+#############################################################
+Time step 21: t=7919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=4.000e-006, ||dx||_inf=7.667e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.667e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 5.555598e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=5.234e-012, ||dx||_inf=7.129e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.129e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 5.234e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 22: t=8919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.752e-006, ||dx||_inf=7.129e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.129e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 5.195544e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=4.404e-012, ||dx||_inf=6.692e+000, ||x||_inf=1.000e+006, ||dx||/||x||=6.692e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 4.404e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 23: t=9919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.544e-006, ||dx||_inf=6.692e+000, ||x||_inf=1.000e+006, ||dx||/||x||=6.692e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 6.410716e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=3.779e-012, ||dx||_inf=6.325e+000, ||x||_inf=1.000e+006, ||dx||/||x||=6.325e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 3.779e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 24: t=10919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.368e-006, ||dx||_inf=6.325e+000, ||x||_inf=1.000e+006, ||dx||/||x||=6.325e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 36/5000
+	 residuals: 7.884892e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=5.142e-012, ||dx||_inf=6.015e+000, ||x||_inf=1.000e+006, ||dx||/||x||=6.014e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 5.142e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 25: t=11919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.215e-006, ||dx||_inf=6.015e+000, ||x||_inf=1.000e+006, ||dx||/||x||=6.014e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 7.194176e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=4.167e-012, ||dx||_inf=5.743e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.743e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 4.167e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 26: t=12919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=3.082e-006, ||dx||_inf=5.743e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.743e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 6.334558e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=3.941e-012, ||dx||_inf=5.508e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.507e-006
+------------------------------------------------------------------
+*** Newton Line Search nonlinear solver computation result
+status    : converged
+iteration : 0/50
+residuals : 3.941e-012 (tolerance=1.000e-007)
+------------------------------------------------------------------
+
+#############################################################
+Time step 27: t=13919.869174 s, dt=1000.000000 s 
+#############################################################
+Solving a partitioned system with 1 active sub problems...
+Solving CMP_TotalDensityForm...
+--Solving nonlinear equation for the CMP_TotalDensityForm process. 
+
+Newton Line Search iteration started!
+-> 0: ||r||_inf=2.963e-006, ||dx||_inf=5.508e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.507e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 8.105721e-013
+------------------------------------------------------------------
+-> 1: ||r||_inf=6.032e-004, ||dx||_inf=5.298e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.297e-006
+Global Line Search begins!
+-> 2: ||r||_inf=1.863e-004, ||dx||_inf=2.649e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.649e-006
+Global Line Search begins!
+-> 3: ||r||_inf=4.941e-005, ||dx||_inf=1.325e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.324e-006
+Global Line Search begins!
+-> 4: ||r||_inf=9.200e-006, ||dx||_inf=6.623e-001, ||x||_inf=1.000e+006, ||dx||/||x||=6.622e-007
+Global Line Search begins!
+-> 5: ||r||_inf=2.778e-006, ||dx||_inf=3.311e-001, ||x||_inf=1.000e+006, ||dx||/||x||=3.311e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 8.095940e-013
+------------------------------------------------------------------
+-> 6: ||r||_inf=6.032e-004, ||dx||_inf=4.967e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.966e-006
+Global Line Search begins!
+-> 7: ||r||_inf=2.050e-004, ||dx||_inf=2.483e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.483e-006
+Global Line Search begins!
+-> 8: ||r||_inf=6.712e-005, ||dx||_inf=1.242e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.242e-006
+Global Line Search begins!
+-> 9: ||r||_inf=1.768e-005, ||dx||_inf=6.209e-001, ||x||_inf=1.000e+006, ||dx||/||x||=6.208e-007
+Global Line Search begins!
+-> 10: ||r||_inf=2.604e-006, ||dx||_inf=3.104e-001, ||x||_inf=1.000e+006, ||dx||/||x||=3.104e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 8.292911e-013
+------------------------------------------------------------------
+-> 11: ||r||_inf=6.032e-004, ||dx||_inf=4.656e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.656e-006
+Global Line Search begins!
+-> 12: ||r||_inf=2.577e-004, ||dx||_inf=2.328e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.328e-006
+Global Line Search begins!
+-> 13: ||r||_inf=8.776e-005, ||dx||_inf=1.164e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.164e-006
+Global Line Search begins!
+-> 14: ||r||_inf=4.025e-005, ||dx||_inf=5.821e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.820e-007
+Global Line Search begins!
+-> 15: ||r||_inf=2.442e-006, ||dx||_inf=2.910e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.910e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 8.234896e-013
+------------------------------------------------------------------
+-> 16: ||r||_inf=6.032e-004, ||dx||_inf=4.365e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.365e-006
+Global Line Search begins!
+-> 17: ||r||_inf=2.760e-004, ||dx||_inf=2.183e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.182e-006
+Global Line Search begins!
+-> 18: ||r||_inf=1.149e-004, ||dx||_inf=1.091e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.091e-006
+Global Line Search begins!
+-> 19: ||r||_inf=6.018e-005, ||dx||_inf=5.457e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.456e-007
+Global Line Search begins!
+-> 20: ||r||_inf=2.176e-005, ||dx||_inf=2.728e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.728e-007
+Global Line Search begins!
+-> 21: ||r||_inf=2.365e-006, ||dx||_inf=1.364e-001, ||x||_inf=1.000e+006, ||dx||/||x||=1.364e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 8.100395e-013
+------------------------------------------------------------------
+-> 22: ||r||_inf=6.032e-004, ||dx||_inf=4.229e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.228e-006
+Global Line Search begins!
+-> 23: ||r||_inf=2.845e-004, ||dx||_inf=2.115e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.114e-006
+Global Line Search begins!
+-> 24: ||r||_inf=1.269e-004, ||dx||_inf=1.057e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.057e-006
+Global Line Search begins!
+-> 25: ||r||_inf=6.891e-005, ||dx||_inf=5.286e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.286e-007
+Global Line Search begins!
+-> 26: ||r||_inf=2.549e-005, ||dx||_inf=2.643e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.643e-007
+Global Line Search begins!
+-> 27: ||r||_inf=1.627e-005, ||dx||_inf=1.322e-001, ||x||_inf=1.000e+006, ||dx||/||x||=1.321e-007
+Global Line Search begins!
+-> 28: ||r||_inf=2.328e-006, ||dx||_inf=6.608e-002, ||x||_inf=1.000e+006, ||dx||/||x||=6.607e-008
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 8.134363e-013
+------------------------------------------------------------------
+-> 29: ||r||_inf=6.032e-004, ||dx||_inf=4.163e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.162e-006
+Global Line Search begins!
+-> 30: ||r||_inf=2.887e-004, ||dx||_inf=2.081e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.081e-006
+Global Line Search begins!
+-> 31: ||r||_inf=1.326e-004, ||dx||_inf=1.041e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.041e-006
+Global Line Search begins!
+-> 32: ||r||_inf=7.303e-005, ||dx||_inf=5.204e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.203e-007
+Global Line Search begins!
+-> 33: ||r||_inf=2.880e-005, ||dx||_inf=2.602e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.601e-007
+Global Line Search begins!
+-> 34: ||r||_inf=2.287e-005, ||dx||_inf=1.301e-001, ||x||_inf=1.000e+006, ||dx||/||x||=1.301e-007
+Global Line Search begins!
+-> 35: ||r||_inf=1.626e-005, ||dx||_inf=6.504e-002, ||x||_inf=1.000e+006, ||dx||/||x||=6.504e-008
+Global Line Search begins!
+-> 36: ||r||_inf=2.310e-006, ||dx||_inf=3.252e-002, ||x||_inf=1.000e+006, ||dx||/||x||=3.252e-008
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 7.918349e-013
+------------------------------------------------------------------
+-> 37: ||r||_inf=6.032e-004, ||dx||_inf=4.130e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.130e-006
+Global Line Search begins!
+-> 38: ||r||_inf=2.908e-004, ||dx||_inf=2.065e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.065e-006
+Global Line Search begins!
+-> 39: ||r||_inf=1.354e-004, ||dx||_inf=1.033e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.032e-006
+Global Line Search begins!
+-> 40: ||r||_inf=7.505e-005, ||dx||_inf=5.163e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.162e-007
+Global Line Search begins!
+-> 41: ||r||_inf=3.051e-005, ||dx||_inf=2.581e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.581e-007
+Global Line Search begins!
+-> 42: ||r||_inf=2.370e-005, ||dx||_inf=1.291e-001, ||x||_inf=1.000e+006, ||dx||/||x||=1.291e-007
+Global Line Search begins!
+-> 43: ||r||_inf=1.668e-005, ||dx||_inf=6.454e-002, ||x||_inf=1.000e+006, ||dx||/||x||=6.453e-008
+Global Line Search begins!
+-> 44: ||r||_inf=2.292e-006, ||dx||_inf=3.227e-002, ||x||_inf=1.000e+006, ||dx||/||x||=3.226e-008
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 4.853500e-013
+------------------------------------------------------------------
+-> 45: ||r||_inf=6.032e-004, ||dx||_inf=4.098e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.098e-006
+Global Line Search begins!
+-> 46: ||r||_inf=2.928e-004, ||dx||_inf=2.049e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.049e-006
+Global Line Search begins!
+-> 47: ||r||_inf=1.382e-004, ||dx||_inf=1.025e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.024e-006
+Global Line Search begins!
+-> 48: ||r||_inf=7.704e-005, ||dx||_inf=5.123e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.122e-007
+Global Line Search begins!
+-> 49: ||r||_inf=3.216e-005, ||dx||_inf=2.561e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.561e-007
+Global Line Search begins!
+-> 50: ||r||_inf=2.523e-005, ||dx||_inf=1.281e-001, ||x||_inf=1.000e+006, ||dx||/||x||=1.280e-007
+Global Line Search begins!
+-> 51: ||r||_inf=1.784e-005, ||dx||_inf=6.403e-002, ||x||_inf=1.000e+006, ||dx||/||x||=6.402e-008
+Global Line Search begins!
+-> 52: ||r||_inf=1.667e-005, ||dx||_inf=3.202e-002, ||x||_inf=1.000e+006, ||dx||/||x||=3.201e-008
+Global Line Search begins!
+-> 53: ||r||_inf=2.283e-006, ||dx||_inf=1.601e-002, ||x||_inf=1.000e+006, ||dx||/||x||=1.601e-008
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 7.220716e-013
+------------------------------------------------------------------
+-> 54: ||r||_inf=6.032e-004, ||dx||_inf=4.082e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.081e-006
+Global Line Search begins!
+-> 55: ||r||_inf=2.938e-004, ||dx||_inf=2.041e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.041e-006
+Global Line Search begins!
+-> 56: ||r||_inf=1.396e-004, ||dx||_inf=1.020e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.020e-006
+Global Line Search begins!
+-> 57: ||r||_inf=7.802e-005, ||dx||_inf=5.102e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.102e-007
+Global Line Search begins!
+-> 58: ||r||_inf=3.297e-005, ||dx||_inf=2.551e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.551e-007
+Global Line Search begins!
+-> 59: ||r||_inf=2.597e-005, ||dx||_inf=1.276e-001, ||x||_inf=1.000e+006, ||dx||/||x||=1.275e-007
+Global Line Search begins!
+-> 60: ||r||_inf=1.861e-005, ||dx||_inf=6.378e-002, ||x||_inf=1.000e+006, ||dx||/||x||=6.377e-008
+Global Line Search begins!
+-> 61: ||r||_inf=1.697e-005, ||dx||_inf=3.189e-002, ||x||_inf=1.000e+006, ||dx||/||x||=3.189e-008
+Global Line Search begins!
+-> 62: ||r||_inf=2.274e-006, ||dx||_inf=1.594e-002, ||x||_inf=1.000e+006, ||dx||/||x||=1.594e-008
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 8.305089e-013
+------------------------------------------------------------------
+-> 63: ||r||_inf=6.032e-004, ||dx||_inf=4.066e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.066e-006
+Global Line Search begins!
+-> 64: ||r||_inf=2.948e-004, ||dx||_inf=2.033e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.033e-006
+Global Line Search begins!
+-> 65: ||r||_inf=1.409e-004, ||dx||_inf=1.017e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.016e-006
+Global Line Search begins!
+-> 66: ||r||_inf=7.959e-005, ||dx||_inf=5.083e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.082e-007
+Global Line Search begins!
+-> 67: ||r||_inf=3.376e-005, ||dx||_inf=2.541e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.541e-007
+Global Line Search begins!
+-> 68: ||r||_inf=2.670e-005, ||dx||_inf=1.271e-001, ||x||_inf=1.000e+006, ||dx||/||x||=1.271e-007
+Global Line Search begins!
+-> 69: ||r||_inf=2.288e-005, ||dx||_inf=6.353e-002, ||x||_inf=1.000e+006, ||dx||/||x||=6.353e-008
+Global Line Search begins!
+-> 70: ||r||_inf=1.782e-005, ||dx||_inf=3.177e-002, ||x||_inf=1.000e+006, ||dx||/||x||=3.176e-008
+Global Line Search begins!
+-> 71: ||r||_inf=1.697e-005, ||dx||_inf=1.588e-002, ||x||_inf=1.000e+006, ||dx||/||x||=1.588e-008
+Global Line Search begins!
+-> 72: ||r||_inf=2.270e-006, ||dx||_inf=7.942e-003, ||x||_inf=1.000e+006, ||dx||/||x||=7.941e-009
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 37/5000
+	 residuals: 8.318383e-013
+------------------------------------------------------------------
+-> 73: ||r||_inf=6.032e-004, ||dx||_inf=4.058e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.058e-006
+Global Line Search begins!
+-> 74: ||r||_inf=2.953e-004, ||dx||_inf=2.029e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.029e-006
+Global Line Search begins!
+-> 75: ||r||_inf=1.416e-004, ||dx||_inf=1.015e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.014e-006
+Global Line Search begins!
+-> 76: ||r||_inf=8.047e-005, ||dx||_inf=5.073e-001, ||x||_inf=1.000e+006, ||dx||/||x||=5.072e-007
+Global Line Search begins!
+-> 77: ||r||_inf=3.415e-005, ||dx||_inf=2.537e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.536e-007
+Global Line Search begins!
+-> 78: ||r||_inf=2.706e-005, ||dx||_inf=1.268e-001, ||x||_inf=1.000e+006, ||dx||/||x||=1.268e-007
+Global Line Search begins!
+-> 79: ||r||_inf=2.301e-005, ||dx||_inf=6.341e-002, ||x||_inf=1.000e+006, ||dx||/||x||=6.340e-008
+Global Line Search begins!
+-> 80: ||r||_inf=1.821e-005, ||dx||_inf=3.171e-002, ||x||_inf=1.000e+006, ||dx||/||x||=3.170e-008
+Global Line Search begins!
+-> 81: ||r||_inf=1.742e-005, ||dx||_inf=1.585e-002, ||x||_inf=1.000e+006, ||dx||/||x||=1.585e-008
+Global Line Search begins!
+-> 82: ||r||_inf=1.697e-005, ||dx||_inf=7.927e-003, ||x||_inf=1.000e+006, ||dx||/||x||=7.926e-009
+Global Line Search begins!
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 6.523862e-013
+------------------------------------------------------------------
+-> 83: ||r||_inf=6.018e-004, ||dx||_inf=3.405e+002, ||x||_inf=1.000e+006, ||dx||/||x||=3.403e-004
+Global Line Search begins!
+-> 84: ||r||_inf=2.599e-004, ||dx||_inf=1.702e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.702e-004
+Global Line Search begins!
+-> 85: ||r||_inf=1.422e-004, ||dx||_inf=8.512e+001, ||x||_inf=1.000e+006, ||dx||/||x||=8.510e-005
+Global Line Search begins!
+-> 86: ||r||_inf=8.086e-005, ||dx||_inf=4.256e+001, ||x||_inf=1.000e+006, ||dx||/||x||=4.255e-005
+Global Line Search begins!
+-> 87: ||r||_inf=3.504e-005, ||dx||_inf=2.128e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.128e-005
+Global Line Search begins!
+-> 88: ||r||_inf=2.774e-005, ||dx||_inf=1.064e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.064e-005
+Global Line Search begins!
+-> 89: ||r||_inf=2.307e-005, ||dx||_inf=5.320e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.319e-006
+Global Line Search begins!
+-> 90: ||r||_inf=1.850e-005, ||dx||_inf=2.660e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.660e-006
+Global Line Search begins!
+-> 91: ||r||_inf=1.768e-005, ||dx||_inf=1.330e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.330e-006
+Global Line Search begins!
+-> 92: ||r||_inf=1.724e-005, ||dx||_inf=6.650e-001, ||x||_inf=1.000e+006, ||dx||/||x||=6.649e-007
+Global Line Search begins!
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 64/5000
+	 residuals: 3.533054e-013
+------------------------------------------------------------------
+-> 93: ||r||_inf=9.556e-004, ||dx||_inf=1.447e+004, ||x||_inf=1.000e+006, ||dx||/||x||=1.447e-002
+Global Line Search begins!
+-> 94: ||r||_inf=4.780e-004, ||dx||_inf=7.236e+003, ||x||_inf=1.000e+006, ||dx||/||x||=7.236e-003
+Global Line Search begins!
+-> 95: ||r||_inf=2.392e-004, ||dx||_inf=3.618e+003, ||x||_inf=1.000e+006, ||dx||/||x||=3.618e-003
+Global Line Search begins!
+-> 96: ||r||_inf=1.198e-004, ||dx||_inf=1.809e+003, ||x||_inf=1.000e+006, ||dx||/||x||=1.809e-003
+Global Line Search begins!
+-> 97: ||r||_inf=6.008e-005, ||dx||_inf=9.044e+002, ||x||_inf=1.000e+006, ||dx||/||x||=9.044e-004
+Global Line Search begins!
+-> 98: ||r||_inf=3.022e-005, ||dx||_inf=4.522e+002, ||x||_inf=1.000e+006, ||dx||/||x||=4.522e-004
+Global Line Search begins!
+-> 99: ||r||_inf=2.343e-005, ||dx||_inf=2.261e+002, ||x||_inf=1.000e+006, ||dx||/||x||=2.261e-004
+Global Line Search begins!
+-> 100: ||r||_inf=7.837e-006, ||dx||_inf=1.131e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.131e-004
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 4.566971e-013
+------------------------------------------------------------------
+-> 101: ||r||_inf=6.032e-004, ||dx||_inf=1.168e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.168e-004
+Global Line Search begins!
+-> 102: ||r||_inf=2.591e-004, ||dx||_inf=5.839e+001, ||x||_inf=1.000e+006, ||dx||/||x||=5.838e-005
+Global Line Search begins!
+-> 103: ||r||_inf=1.453e-004, ||dx||_inf=2.919e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.919e-005
+Global Line Search begins!
+-> 104: ||r||_inf=8.521e-005, ||dx||_inf=1.460e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.460e-005
+Global Line Search begins!
+-> 105: ||r||_inf=5.871e-005, ||dx||_inf=7.298e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.298e-006
+Global Line Search begins!
+-> 106: ||r||_inf=2.947e-005, ||dx||_inf=3.649e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.649e-006
+Global Line Search begins!
+-> 107: ||r||_inf=2.456e-005, ||dx||_inf=1.825e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.824e-006
+Global Line Search begins!
+-> 108: ||r||_inf=2.328e-005, ||dx||_inf=9.123e-001, ||x||_inf=1.000e+006, ||dx||/||x||=9.122e-007
+Global Line Search begins!
+-> 109: ||r||_inf=7.807e-006, ||dx||_inf=4.561e-001, ||x||_inf=1.000e+006, ||dx||/||x||=4.561e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 4.567108e-013
+------------------------------------------------------------------
+-> 110: ||r||_inf=6.032e-004, ||dx||_inf=1.163e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.163e-004
+Global Line Search begins!
+-> 111: ||r||_inf=2.600e-004, ||dx||_inf=5.816e+001, ||x||_inf=1.000e+006, ||dx||/||x||=5.815e-005
+Global Line Search begins!
+-> 112: ||r||_inf=1.467e-004, ||dx||_inf=2.908e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.908e-005
+Global Line Search begins!
+-> 113: ||r||_inf=8.685e-005, ||dx||_inf=1.454e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.454e-005
+Global Line Search begins!
+-> 114: ||r||_inf=5.972e-005, ||dx||_inf=7.270e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.269e-006
+Global Line Search begins!
+-> 115: ||r||_inf=3.044e-005, ||dx||_inf=3.635e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.635e-006
+Global Line Search begins!
+-> 116: ||r||_inf=2.809e-005, ||dx||_inf=1.817e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.817e-006
+Global Line Search begins!
+-> 117: ||r||_inf=2.360e-005, ||dx||_inf=9.087e-001, ||x||_inf=1.000e+006, ||dx||/||x||=9.087e-007
+Global Line Search begins!
+-> 118: ||r||_inf=1.830e-005, ||dx||_inf=4.544e-001, ||x||_inf=1.000e+006, ||dx||/||x||=4.543e-007
+Global Line Search begins!
+-> 119: ||r||_inf=7.791e-006, ||dx||_inf=2.272e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.272e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 4.567402e-013
+------------------------------------------------------------------
+-> 120: ||r||_inf=6.032e-004, ||dx||_inf=1.161e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.161e-004
+Global Line Search begins!
+-> 121: ||r||_inf=2.604e-004, ||dx||_inf=5.804e+001, ||x||_inf=1.000e+006, ||dx||/||x||=5.804e-005
+Global Line Search begins!
+-> 122: ||r||_inf=1.473e-004, ||dx||_inf=2.902e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.902e-005
+Global Line Search begins!
+-> 123: ||r||_inf=8.766e-005, ||dx||_inf=1.451e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.451e-005
+Global Line Search begins!
+-> 124: ||r||_inf=6.022e-005, ||dx||_inf=7.255e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.255e-006
+Global Line Search begins!
+-> 125: ||r||_inf=3.091e-005, ||dx||_inf=3.628e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.628e-006
+Global Line Search begins!
+-> 126: ||r||_inf=2.821e-005, ||dx||_inf=1.814e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.814e-006
+Global Line Search begins!
+-> 127: ||r||_inf=2.401e-005, ||dx||_inf=9.069e-001, ||x||_inf=1.000e+006, ||dx||/||x||=9.069e-007
+Global Line Search begins!
+-> 128: ||r||_inf=2.341e-005, ||dx||_inf=4.535e-001, ||x||_inf=1.000e+006, ||dx||/||x||=4.534e-007
+Global Line Search begins!
+-> 129: ||r||_inf=7.776e-006, ||dx||_inf=2.267e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.267e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 4.567384e-013
+------------------------------------------------------------------
+-> 130: ||r||_inf=6.032e-004, ||dx||_inf=1.159e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.158e-004
+Global Line Search begins!
+-> 131: ||r||_inf=2.609e-004, ||dx||_inf=5.793e+001, ||x||_inf=1.000e+006, ||dx||/||x||=5.792e-005
+Global Line Search begins!
+-> 132: ||r||_inf=1.480e-004, ||dx||_inf=2.897e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.896e-005
+Global Line Search begins!
+-> 133: ||r||_inf=8.847e-005, ||dx||_inf=1.448e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.448e-005
+Global Line Search begins!
+-> 134: ||r||_inf=6.072e-005, ||dx||_inf=7.241e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.241e-006
+Global Line Search begins!
+-> 135: ||r||_inf=3.137e-005, ||dx||_inf=3.621e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.620e-006
+Global Line Search begins!
+-> 136: ||r||_inf=2.833e-005, ||dx||_inf=1.810e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.810e-006
+Global Line Search begins!
+-> 137: ||r||_inf=2.453e-005, ||dx||_inf=9.052e-001, ||x||_inf=1.000e+006, ||dx||/||x||=9.051e-007
+Global Line Search begins!
+-> 138: ||r||_inf=2.360e-005, ||dx||_inf=4.526e-001, ||x||_inf=1.000e+006, ||dx||/||x||=4.526e-007
+Global Line Search begins!
+-> 139: ||r||_inf=1.840e-005, ||dx||_inf=2.263e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.263e-007
+Global Line Search begins!
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 4.567653e-013
+------------------------------------------------------------------
+-> 140: ||r||_inf=6.032e-004, ||dx||_inf=1.157e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.157e-004
+Global Line Search begins!
+-> 141: ||r||_inf=2.611e-004, ||dx||_inf=5.787e+001, ||x||_inf=1.000e+006, ||dx||/||x||=5.787e-005
+Global Line Search begins!
+-> 142: ||r||_inf=1.483e-004, ||dx||_inf=2.894e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.893e-005
+Global Line Search begins!
+-> 143: ||r||_inf=8.898e-005, ||dx||_inf=1.447e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.447e-005
+Global Line Search begins!
+-> 144: ||r||_inf=6.097e-005, ||dx||_inf=7.234e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.234e-006
+Global Line Search begins!
+-> 145: ||r||_inf=3.159e-005, ||dx||_inf=3.617e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.617e-006
+Global Line Search begins!
+-> 146: ||r||_inf=2.838e-005, ||dx||_inf=1.809e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.808e-006
+Global Line Search begins!
+-> 147: ||r||_inf=2.479e-005, ||dx||_inf=9.043e-001, ||x||_inf=1.000e+006, ||dx||/||x||=9.042e-007
+Global Line Search begins!
+-> 148: ||r||_inf=2.372e-005, ||dx||_inf=4.521e-001, ||x||_inf=1.000e+006, ||dx||/||x||=4.521e-007
+Global Line Search begins!
+-> 149: ||r||_inf=1.845e-005, ||dx||_inf=2.261e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.261e-007
+Global Line Search begins!
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 4.566530e-013
+------------------------------------------------------------------
+-> 150: ||r||_inf=6.032e-004, ||dx||_inf=1.156e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.156e-004
+Global Line Search begins!
+-> 151: ||r||_inf=2.613e-004, ||dx||_inf=5.782e+001, ||x||_inf=1.000e+006, ||dx||/||x||=5.781e-005
+Global Line Search begins!
+-> 152: ||r||_inf=1.487e-004, ||dx||_inf=2.891e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.891e-005
+Global Line Search begins!
+-> 153: ||r||_inf=8.944e-005, ||dx||_inf=1.445e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.445e-005
+Global Line Search begins!
+-> 154: ||r||_inf=6.122e-005, ||dx||_inf=7.227e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.227e-006
+Global Line Search begins!
+-> 155: ||r||_inf=3.181e-005, ||dx||_inf=3.614e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.613e-006
+Global Line Search begins!
+-> 156: ||r||_inf=2.844e-005, ||dx||_inf=1.807e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.807e-006
+Global Line Search begins!
+-> 157: ||r||_inf=2.504e-005, ||dx||_inf=9.034e-001, ||x||_inf=1.000e+006, ||dx||/||x||=9.034e-007
+Global Line Search begins!
+-> 158: ||r||_inf=2.401e-005, ||dx||_inf=4.517e-001, ||x||_inf=1.000e+006, ||dx||/||x||=4.517e-007
+Global Line Search begins!
+-> 159: ||r||_inf=2.360e-005, ||dx||_inf=2.258e-001, ||x||_inf=1.000e+006, ||dx||/||x||=2.258e-007
+Global Line Search begins!
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 6.654722e-013
+------------------------------------------------------------------
+-> 160: ||r||_inf=6.304e-004, ||dx||_inf=4.676e+002, ||x||_inf=1.001e+006, ||dx||/||x||=4.674e-004
+Global Line Search begins!
+-> 161: ||r||_inf=3.106e-004, ||dx||_inf=2.338e+002, ||x||_inf=1.000e+006, ||dx||/||x||=2.337e-004
+Global Line Search begins!
+-> 162: ||r||_inf=1.534e-004, ||dx||_inf=1.169e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.169e-004
+Global Line Search begins!
+-> 163: ||r||_inf=9.238e-005, ||dx||_inf=5.845e+001, ||x||_inf=1.000e+006, ||dx||/||x||=5.844e-005
+Global Line Search begins!
+-> 164: ||r||_inf=6.217e-005, ||dx||_inf=2.922e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.922e-005
+Global Line Search begins!
+-> 165: ||r||_inf=3.200e-005, ||dx||_inf=1.461e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.461e-005
+Global Line Search begins!
+-> 166: ||r||_inf=2.850e-005, ||dx||_inf=7.306e+000, ||x||_inf=1.000e+006, ||dx||/||x||=7.306e-006
+Global Line Search begins!
+-> 167: ||r||_inf=2.537e-005, ||dx||_inf=3.653e+000, ||x||_inf=1.000e+006, ||dx||/||x||=3.653e-006
+Global Line Search begins!
+-> 168: ||r||_inf=2.432e-005, ||dx||_inf=1.827e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.826e-006
+Global Line Search begins!
+-> 169: ||r||_inf=2.374e-005, ||dx||_inf=9.133e-001, ||x||_inf=1.000e+006, ||dx||/||x||=9.132e-007
+Global Line Search begins!
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 44/5000
+	 residuals: 9.100983e-013
+------------------------------------------------------------------
+-> 170: ||r||_inf=1.232e-003, ||dx||_inf=1.551e+004, ||x||_inf=1.016e+006, ||dx||/||x||=1.527e-002
+Global Line Search begins!
+-> 171: ||r||_inf=5.646e-004, ||dx||_inf=7.756e+003, ||x||_inf=1.008e+006, ||dx||/||x||=7.696e-003
+Global Line Search begins!
+-> 172: ||r||_inf=2.463e-004, ||dx||_inf=3.878e+003, ||x||_inf=1.004e+006, ||dx||/||x||=3.863e-003
+Global Line Search begins!
+-> 173: ||r||_inf=1.396e-004, ||dx||_inf=1.939e+003, ||x||_inf=1.002e+006, ||dx||/||x||=1.935e-003
+Global Line Search begins!
+-> 174: ||r||_inf=8.136e-005, ||dx||_inf=9.695e+002, ||x||_inf=1.001e+006, ||dx||/||x||=9.685e-004
+Global Line Search begins!
+-> 175: ||r||_inf=3.486e-005, ||dx||_inf=4.847e+002, ||x||_inf=1.001e+006, ||dx||/||x||=4.845e-004
+Global Line Search begins!
+-> 176: ||r||_inf=2.978e-005, ||dx||_inf=2.424e+002, ||x||_inf=1.000e+006, ||dx||/||x||=2.423e-004
+Global Line Search begins!
+-> 177: ||r||_inf=2.692e-005, ||dx||_inf=1.212e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.212e-004
+Global Line Search begins!
+-> 178: ||r||_inf=2.532e-005, ||dx||_inf=6.059e+001, ||x||_inf=1.000e+006, ||dx||/||x||=6.059e-005
+Global Line Search begins!
+-> 179: ||r||_inf=2.445e-005, ||dx||_inf=3.030e+001, ||x||_inf=1.000e+006, ||dx||/||x||=3.029e-005
+Global Line Search begins!
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 65/5000
+	 residuals: 2.676573e-013
+------------------------------------------------------------------
+-> 180: ||r||_inf=8.697e-003, ||dx||_inf=7.553e+004, ||x||_inf=1.000e+006, ||dx||/||x||=7.553e-002
+Global Line Search begins!
+-> 181: ||r||_inf=2.849e-003, ||dx||_inf=3.776e+004, ||x||_inf=1.000e+006, ||dx||/||x||=3.776e-002
+Global Line Search begins!
+-> 182: ||r||_inf=7.368e-004, ||dx||_inf=1.888e+004, ||x||_inf=1.000e+006, ||dx||/||x||=1.888e-002
+Global Line Search begins!
+-> 183: ||r||_inf=3.610e-004, ||dx||_inf=9.441e+003, ||x||_inf=1.000e+006, ||dx||/||x||=9.441e-003
+Global Line Search begins!
+-> 184: ||r||_inf=1.804e-004, ||dx||_inf=4.721e+003, ||x||_inf=1.000e+006, ||dx||/||x||=4.721e-003
+Global Line Search begins!
+-> 185: ||r||_inf=9.008e-005, ||dx||_inf=2.360e+003, ||x||_inf=1.000e+006, ||dx||/||x||=2.360e-003
+Global Line Search begins!
+-> 186: ||r||_inf=4.493e-005, ||dx||_inf=1.180e+003, ||x||_inf=1.000e+006, ||dx||/||x||=1.180e-003
+Global Line Search begins!
+-> 187: ||r||_inf=2.495e-005, ||dx||_inf=5.901e+002, ||x||_inf=1.000e+006, ||dx||/||x||=5.901e-004
+Global Line Search begins!
+-> 188: ||r||_inf=1.106e-005, ||dx||_inf=2.950e+002, ||x||_inf=1.000e+006, ||dx||/||x||=2.950e-004
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 6.562847e-013
+------------------------------------------------------------------
+-> 189: ||r||_inf=6.032e-004, ||dx||_inf=3.805e+002, ||x||_inf=1.000e+006, ||dx||/||x||=3.805e-004
+Global Line Search begins!
+-> 190: ||r||_inf=2.609e-004, ||dx||_inf=1.903e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.903e-004
+Global Line Search begins!
+-> 191: ||r||_inf=1.482e-004, ||dx||_inf=9.513e+001, ||x||_inf=1.000e+006, ||dx||/||x||=9.513e-005
+Global Line Search begins!
+-> 192: ||r||_inf=8.828e-005, ||dx||_inf=4.757e+001, ||x||_inf=1.000e+006, ||dx||/||x||=4.757e-005
+Global Line Search begins!
+-> 193: ||r||_inf=6.250e-005, ||dx||_inf=2.378e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.378e-005
+Global Line Search begins!
+-> 194: ||r||_inf=3.440e-005, ||dx||_inf=1.189e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.189e-005
+Global Line Search begins!
+-> 195: ||r||_inf=3.083e-005, ||dx||_inf=5.946e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.946e-006
+Global Line Search begins!
+-> 196: ||r||_inf=2.906e-005, ||dx||_inf=2.973e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.973e-006
+Global Line Search begins!
+-> 197: ||r||_inf=2.405e-005, ||dx||_inf=1.486e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.486e-006
+Global Line Search begins!
+-> 198: ||r||_inf=1.104e-005, ||dx||_inf=7.432e-001, ||x||_inf=1.000e+006, ||dx||/||x||=7.432e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 6.562689e-013
+------------------------------------------------------------------
+-> 199: ||r||_inf=6.032e-004, ||dx||_inf=3.798e+002, ||x||_inf=1.000e+006, ||dx||/||x||=3.797e-004
+Global Line Search begins!
+-> 200: ||r||_inf=2.613e-004, ||dx||_inf=1.899e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.899e-004
+Global Line Search begins!
+-> 201: ||r||_inf=1.488e-004, ||dx||_inf=9.495e+001, ||x||_inf=1.000e+006, ||dx||/||x||=9.495e-005
+Global Line Search begins!
+-> 202: ||r||_inf=8.921e-005, ||dx||_inf=4.747e+001, ||x||_inf=1.000e+006, ||dx||/||x||=4.747e-005
+Global Line Search begins!
+-> 203: ||r||_inf=6.301e-005, ||dx||_inf=2.374e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.374e-005
+Global Line Search begins!
+-> 204: ||r||_inf=3.481e-005, ||dx||_inf=1.187e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.187e-005
+Global Line Search begins!
+-> 205: ||r||_inf=3.129e-005, ||dx||_inf=5.934e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.934e-006
+Global Line Search begins!
+-> 206: ||r||_inf=2.946e-005, ||dx||_inf=2.967e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.967e-006
+Global Line Search begins!
+-> 207: ||r||_inf=2.416e-005, ||dx||_inf=1.484e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.484e-006
+Global Line Search begins!
+-> 208: ||r||_inf=1.102e-005, ||dx||_inf=7.418e-001, ||x||_inf=1.000e+006, ||dx||/||x||=7.418e-007
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 6.563285e-013
+------------------------------------------------------------------
+-> 209: ||r||_inf=6.032e-004, ||dx||_inf=3.790e+002, ||x||_inf=1.000e+006, ||dx||/||x||=3.790e-004
+Global Line Search begins!
+-> 210: ||r||_inf=2.617e-004, ||dx||_inf=1.895e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.895e-004
+Global Line Search begins!
+-> 211: ||r||_inf=1.495e-004, ||dx||_inf=9.476e+001, ||x||_inf=1.000e+006, ||dx||/||x||=9.476e-005
+Global Line Search begins!
+-> 212: ||r||_inf=9.014e-005, ||dx||_inf=4.738e+001, ||x||_inf=1.000e+006, ||dx||/||x||=4.738e-005
+Global Line Search begins!
+-> 213: ||r||_inf=6.952e-005, ||dx||_inf=2.369e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.369e-005
+Global Line Search begins!
+-> 214: ||r||_inf=3.522e-005, ||dx||_inf=1.185e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.185e-005
+Global Line Search begins!
+-> 215: ||r||_inf=3.174e-005, ||dx||_inf=5.923e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.923e-006
+Global Line Search begins!
+-> 216: ||r||_inf=2.985e-005, ||dx||_inf=2.961e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.961e-006
+Global Line Search begins!
+-> 217: ||r||_inf=2.458e-005, ||dx||_inf=1.481e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.481e-006
+Global Line Search begins!
+-> 218: ||r||_inf=2.416e-005, ||dx||_inf=7.403e-001, ||x||_inf=1.000e+006, ||dx||/||x||=7.403e-007
+Global Line Search begins!
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 40/5000
+	 residuals: 6.566893e-013
+------------------------------------------------------------------
+-> 219: ||r||_inf=6.032e-004, ||dx||_inf=3.787e+002, ||x||_inf=1.000e+006, ||dx||/||x||=3.786e-004
+Global Line Search begins!
+-> 220: ||r||_inf=2.620e-004, ||dx||_inf=1.893e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.893e-004
+Global Line Search begins!
+-> 221: ||r||_inf=1.498e-004, ||dx||_inf=9.467e+001, ||x||_inf=1.000e+006, ||dx||/||x||=9.467e-005
+Global Line Search begins!
+-> 222: ||r||_inf=9.059e-005, ||dx||_inf=4.733e+001, ||x||_inf=1.000e+006, ||dx||/||x||=4.733e-005
+Global Line Search begins!
+-> 223: ||r||_inf=6.979e-005, ||dx||_inf=2.367e+001, ||x||_inf=1.000e+006, ||dx||/||x||=2.367e-005
+Global Line Search begins!
+-> 224: ||r||_inf=3.543e-005, ||dx||_inf=1.183e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.183e-005
+Global Line Search begins!
+-> 225: ||r||_inf=3.196e-005, ||dx||_inf=5.917e+000, ||x||_inf=1.000e+006, ||dx||/||x||=5.917e-006
+Global Line Search begins!
+-> 226: ||r||_inf=3.005e-005, ||dx||_inf=2.958e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.958e-006
+Global Line Search begins!
+-> 227: ||r||_inf=2.478e-005, ||dx||_inf=1.479e+000, ||x||_inf=1.000e+006, ||dx||/||x||=1.479e-006
+Global Line Search begins!
+-> 228: ||r||_inf=2.439e-005, ||dx||_inf=7.396e-001, ||x||_inf=1.000e+006, ||dx||/||x||=7.396e-007
+Global Line Search begins!
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 41/5000
+	 residuals: 5.365301e-013
+------------------------------------------------------------------
+-> 229: ||r||_inf=5.988e-004, ||dx||_inf=5.748e+002, ||x||_inf=1.000e+006, ||dx||/||x||=5.748e-004
+Global Line Search begins!
+-> 230: ||r||_inf=2.985e-004, ||dx||_inf=2.874e+002, ||x||_inf=1.000e+006, ||dx||/||x||=2.874e-004
+Global Line Search begins!
+-> 231: ||r||_inf=1.486e-004, ||dx||_inf=1.437e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.437e-004
+Global Line Search begins!
+-> 232: ||r||_inf=8.986e-005, ||dx||_inf=7.184e+001, ||x||_inf=1.000e+006, ||dx||/||x||=7.184e-005
+Global Line Search begins!
+-> 233: ||r||_inf=6.407e-005, ||dx||_inf=3.592e+001, ||x||_inf=1.000e+006, ||dx||/||x||=3.592e-005
+Global Line Search begins!
+-> 234: ||r||_inf=3.380e-005, ||dx||_inf=1.796e+001, ||x||_inf=1.000e+006, ||dx||/||x||=1.796e-005
+Global Line Search begins!
+-> 235: ||r||_inf=2.921e-005, ||dx||_inf=8.980e+000, ||x||_inf=1.000e+006, ||dx||/||x||=8.980e-006
+Global Line Search begins!
+-> 236: ||r||_inf=2.877e-005, ||dx||_inf=4.490e+000, ||x||_inf=1.000e+006, ||dx||/||x||=4.490e-006
+Global Line Search begins!
+-> 237: ||r||_inf=2.422e-005, ||dx||_inf=2.245e+000, ||x||_inf=1.000e+006, ||dx||/||x||=2.245e-006
+------------------------------------------------------------------
+*** LIS solver computation
+initial vector x = user defined
+precision : double
+solver    : GMRES 9
+precon    : ILU(0)
+storage   : CRS
+lis_solve : normal end
+
+	 iteration: 64/5000
+	 residuals: 2.485753e-013
+------------------------------------------------------------------
+-> 238: ||r||_inf=8.762e-004, ||dx||_inf=1.617e+004, ||x||_inf=1.000e+006, ||dx||/||x||=1.617e-002
+Global Line Search begins!
+-> 239: ||r||_inf=4.418e-004, ||dx||_inf=8.083e+003, ||x||_inf=1.000e+006, ||dx||/||x||=8.083e-003
+Global Line Search begins!
+-> 240: ||r||_inf=2.246e-004, ||dx||_inf=4.042e+003, ||x||_inf=1.000e+006, ||dx||/||x||=4.042e-003
+Global Line Search begins!
+-> 241: ||r||_inf=1.160e-004, ||dx||_inf=2.021e+003, ||x||_inf=1.000e+006, ||dx||/||x||=2.021e-003
+Global Line Search begins!
+-> 242: ||r||_inf=6.170e-005, ||dx||_inf=1.010e+003, ||x||_inf=1.000e+006, ||dx||/||x||=1.010e-003
+Global Line Search begins!
+-> 243: ||r||_inf=3.701e-005, ||dx||_inf=5.052e+002, ||x||_inf=1.000e+006, ||dx||/||x||=5.052e-004
+Global Line Search begins!
+-> 244: ||r||_inf=2.804e-005, ||dx||_inf=2.526e+002, ||x||_inf=1.000e+006, ||dx||/||x||=2.526e-004
+Global Line Search begins!
+-> 245: ||r||_inf=1.418e-005, ||dx||_inf=1.263e+002, ||x||_inf=1.000e+006, ||dx||/||x||=1.263e-004
